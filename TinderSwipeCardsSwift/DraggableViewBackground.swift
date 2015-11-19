@@ -54,9 +54,11 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         self.addSubview(checkButton)
     }
 
+        //test comment
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         var draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT))
         draggableView.information.text = exampleCardLabels[index]
+        draggableView.self.backgroundColor = UIColor(patternImage: UIImage(named: "home-cat.jpg")!) //make this dynamic
         draggableView.delegate = self
         return draggableView
     }

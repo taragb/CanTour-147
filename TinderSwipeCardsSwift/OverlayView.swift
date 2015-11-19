@@ -26,6 +26,7 @@ class OverlayView: UIView{
         super.init(frame: frame)
         self.backgroundColor = UIColor.whiteColor()
         imageView = UIImageView(image: UIImage(named: "noButton"))
+        //imageView.backgroundColor = UIColor.blueColor()
         self.addSubview(imageView)
     }
 
