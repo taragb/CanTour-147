@@ -1,9 +1,8 @@
 //
 //  DraggableView.swift
-//  TinderSwipeCardsSwift
 //
-//  Created by Gao Chao on 4/30/15.
-//  Copyright (c) 2015 gcweb. All rights reserved.
+//  Modified by Team Cantour on 11/19/15.
+//
 //
 
 import Foundation
@@ -44,7 +43,7 @@ class DraggableView: UIView {
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
 
-        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor.whiteColor() //.colorWithAlphaComponent(1) //check this later
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
 
@@ -103,7 +102,7 @@ class DraggableView: UIView {
         } else {
             overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeLeft)
         }
-        overlayView.alpha = CGFloat(min(fabsf(Float(distance))/100, 0.4))
+        overlayView.alpha = CGFloat(max(fabsf(Float(distance))/40, 0.8))
     }
 
     func afterSwipeAction() -> Void {

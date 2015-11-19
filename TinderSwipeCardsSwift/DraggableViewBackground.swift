@@ -1,9 +1,8 @@
 //
 //  DraggableViewBackground.swift
-//  TinderSwipeCardsSwift
 //
-//  Created by Gao Chao on 4/30/15.
-//  Copyright (c) 2015 gcweb. All rights reserved.
+//  Modified by Team Cantour on 11/19/15.
+//
 //
 
 import Foundation
@@ -11,6 +10,7 @@ import UIKit
 
 class DraggableViewBackground: UIView, DraggableViewDelegate {
     var exampleCardLabels: [String]!
+    var exampleCardLocations: [String]!
     var allCards: [DraggableView]!
 
     let MAX_BUFFER_SIZE = 2
@@ -32,7 +32,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["first", "second", "third", "fourth", "last"]
+        exampleCardLabels = ["", "", "", "", "", "", "", "", "", ""]
+        exampleCardLocations = ["Artboard 1.png", "Artboard 2.png", "Artboard 3.png", "Artboard 4.png", "Artboard 5.png", "Artboard 6.png", "Artboard 7.png", "Artboard 8.png", "Artboard 9.png", "Artboard 10.png"]
         allCards = []
         loadedCards = []
         cardsLoadedIndex = 0
@@ -43,11 +44,11 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 1)
 
         xButton = UIButton(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2 + 35, self.frame.size.height/2 + CARD_HEIGHT/2 + 10, 59, 59))
-        xButton.setImage(UIImage(named: "xButton"), forState: UIControlState.Normal)
+        xButton.setImage(UIImage(named: "color_cross"), forState: UIControlState.Normal)
         xButton.addTarget(self, action: "swipeLeft", forControlEvents: UIControlEvents.TouchUpInside)
 
         checkButton = UIButton(frame: CGRectMake(self.frame.size.width/2 + CARD_WIDTH/2 - 85, self.frame.size.height/2 + CARD_HEIGHT/2 + 10, 59, 59))
-        checkButton.setImage(UIImage(named: "checkButton"), forState: UIControlState.Normal)
+        checkButton.setImage(UIImage(named: "color_heart"), forState: UIControlState.Normal)
         checkButton.addTarget(self, action: "swipeRight", forControlEvents: UIControlEvents.TouchUpInside)
 
         self.addSubview(xButton)
@@ -58,7 +59,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         var draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT))
         draggableView.information.text = exampleCardLabels[index]
-        draggableView.self.backgroundColor = UIColor(patternImage: UIImage(named: "home-cat.jpg")!) //make this dynamic
+        draggableView.self.backgroundColor = UIColor(patternImage: UIImage(named: exampleCardLocations[index])!) //make this dynamic
         draggableView.delegate = self
         return draggableView
     }

@@ -1,9 +1,8 @@
 //
 //  OverlayView.swift
-//  TinderSwipeCardsSwift
 //
-//  Created by Gao Chao on 4/30/15.
-//  Copyright (c) 2015 gcweb. All rights reserved.
+//  Modified by Team Cantour on 11/19/15.
+//
 //
 
 import Foundation
@@ -24,8 +23,8 @@ class OverlayView: UIView{
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.whiteColor()
-        imageView = UIImageView(image: UIImage(named: "noButton"))
+        self.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
+        imageView = UIImageView(image: UIImage(named: "final_cross"))
         //imageView.backgroundColor = UIColor.blueColor()
         self.addSubview(imageView)
     }
@@ -37,9 +36,9 @@ class OverlayView: UIView{
         _mode = mode
 
         if _mode == GGOverlayViewMode.GGOverlayViewModeLeft {
-            imageView.image = UIImage(named: "noButton")
+            imageView.image = UIImage(named: "final_cross")
         } else {
-            imageView.image = UIImage(named: "yesButton")
+            imageView.image = UIImage(named: "final_heart")
         }
     }
 
