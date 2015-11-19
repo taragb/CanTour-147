@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35AB55AC1BFD78EC0014C50C /* home-cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35AB55AB1BFD78EC0014C50C /* home-cat.jpg */; };
+		35B4FB321BFE7FEA001B83C1 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */; };
+		35B4FB331BFE7FEA001B83C1 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */; };
+		35B4FB341BFE7FEA001B83C1 /* Artboard 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */; };
+		35B4FB351BFE7FEA001B83C1 /* Artboard 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2B1BFE7FEA001B83C1 /* Artboard 4.png */; };
+		35B4FB361BFE7FEA001B83C1 /* Artboard 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2C1BFE7FEA001B83C1 /* Artboard 5.png */; };
+		35B4FB371BFE7FEA001B83C1 /* Artboard 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2D1BFE7FEA001B83C1 /* Artboard 6.png */; };
+		35B4FB381BFE7FEA001B83C1 /* Artboard 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2E1BFE7FEA001B83C1 /* Artboard 7.png */; };
+		35B4FB391BFE7FEA001B83C1 /* Artboard 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2F1BFE7FEA001B83C1 /* Artboard 8.png */; };
+		35B4FB3A1BFE7FEA001B83C1 /* Artboard 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB301BFE7FEA001B83C1 /* Artboard 9.png */; };
+		35B4FB3B1BFE7FEA001B83C1 /* Artboard 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB311BFE7FEA001B83C1 /* Artboard 10.png */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -30,7 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35AB55AB1BFD78EC0014C50C /* home-cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home-cat.jpg"; sourceTree = "<group>"; };
+		35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1.png"; sourceTree = "<group>"; };
+		35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 2.png"; sourceTree = "<group>"; };
+		35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 3.png"; sourceTree = "<group>"; };
+		35B4FB2B1BFE7FEA001B83C1 /* Artboard 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 4.png"; sourceTree = "<group>"; };
+		35B4FB2C1BFE7FEA001B83C1 /* Artboard 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 5.png"; sourceTree = "<group>"; };
+		35B4FB2D1BFE7FEA001B83C1 /* Artboard 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 6.png"; sourceTree = "<group>"; };
+		35B4FB2E1BFE7FEA001B83C1 /* Artboard 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 7.png"; sourceTree = "<group>"; };
+		35B4FB2F1BFE7FEA001B83C1 /* Artboard 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 8.png"; sourceTree = "<group>"; };
+		35B4FB301BFE7FEA001B83C1 /* Artboard 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 9.png"; sourceTree = "<group>"; };
+		35B4FB311BFE7FEA001B83C1 /* Artboard 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 10.png"; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +103,16 @@
 		CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				35AB55AB1BFD78EC0014C50C /* home-cat.jpg */,
+				35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */,
+				35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */,
+				35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */,
+				35B4FB2B1BFE7FEA001B83C1 /* Artboard 4.png */,
+				35B4FB2C1BFE7FEA001B83C1 /* Artboard 5.png */,
+				35B4FB2D1BFE7FEA001B83C1 /* Artboard 6.png */,
+				35B4FB2E1BFE7FEA001B83C1 /* Artboard 7.png */,
+				35B4FB2F1BFE7FEA001B83C1 /* Artboard 8.png */,
+				35B4FB301BFE7FEA001B83C1 /* Artboard 9.png */,
+				35B4FB311BFE7FEA001B83C1 /* Artboard 10.png */,
 				CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */,
 				CC2D002C1AF1D31400AF5C5F /* ViewController.swift */,
 				CC2D004E1AF2107800AF5C5F /* DraggableViewBackground.swift */,
@@ -205,9 +232,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */,
-				35AB55AC1BFD78EC0014C50C /* home-cat.jpg in Resources */,
+				35B4FB321BFE7FEA001B83C1 /* Artboard 1.png in Resources */,
+				35B4FB331BFE7FEA001B83C1 /* Artboard 2.png in Resources */,
+				35B4FB391BFE7FEA001B83C1 /* Artboard 8.png in Resources */,
+				35B4FB371BFE7FEA001B83C1 /* Artboard 6.png in Resources */,
+				35B4FB351BFE7FEA001B83C1 /* Artboard 4.png in Resources */,
+				35B4FB341BFE7FEA001B83C1 /* Artboard 3.png in Resources */,
+				35B4FB361BFE7FEA001B83C1 /* Artboard 5.png in Resources */,
+				35B4FB381BFE7FEA001B83C1 /* Artboard 7.png in Resources */,
+				35B4FB3A1BFE7FEA001B83C1 /* Artboard 9.png in Resources */,
 				CC2D00351AF1D31400AF5C5F /* LaunchScreen.xib in Resources */,
 				CC2D00321AF1D31400AF5C5F /* Images.xcassets in Resources */,
+				35B4FB3B1BFE7FEA001B83C1 /* Artboard 10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
