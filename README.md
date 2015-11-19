@@ -1,6 +1,3 @@
-TinderSwipeCardsSwift
-======
+CanTour CS 147 Group Project
 
-#### Credits to https://github.com/cwRichardKim/TinderSimpleSwipeCards
-
-Implement Tinder swipe cards effect in Swift.
+personalize your Cantor experienc
