@@ -43,7 +43,7 @@ class DraggableView: UIView {
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
 
-        self.backgroundColor = UIColor.whiteColor() //.colorWithAlphaComponent(1) //check this later
+        self.backgroundColor = UIColor.whiteColor() 
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
 

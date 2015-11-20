@@ -15,12 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C28-DE-902">
+                                <rect key="frame" x="87" y="587" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.23921568627450979" green="0.78823529411764703" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="View Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89184816919191912" green="0.89184816919191912" blue="0.89184816919191912" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="aN6-Zq-OhD" kind="show" identifier="QuiztoResults" id="3Yb-CY-jUe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-787" y="-1181"/>
+            <point key="canvasLocation" x="-923.5" y="-1211.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y4x-VL-CfX">
+            <objects>
+                <viewController id="aN6-Zq-OhD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f7f-BX-Czy"/>
+                        <viewControllerLayoutGuide type="bottom" id="WRZ-yr-3zu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Thc-g9-m2L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3e-tB-lf3">
+                                <rect key="frame" x="6" y="8" width="101" height="53"/>
+                                <state key="normal" title="retake quiz">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IAJ-uD-9EG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Results.png" translatesAutoresizingMaskIntoConstraints="NO" id="85w-bA-du8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wyb-lj-Fi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.5" y="-1186.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fmc-cq-SDX">
@@ -52,7 +103,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="SEd-H5-0sF"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="SEd-H5-0sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-hg-zww">
+                                <rect key="frame" x="56" y="563" width="266" height="43"/>
+                                <state key="normal" title="results screen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aN6-Zq-OhD" kind="show" id="beQ-Nj-BNf"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home w_ buttons.png" translatesAutoresizingMaskIntoConstraints="NO" id="M1j-Gx-125">
@@ -67,11 +127,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSM-hS-gjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1505.5" y="-1186.5"/>
+            <point key="canvasLocation" x="-1491.5" y="-1218.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Home w_ buttons.png" width="375" height="667"/>
+        <image name="Results.png" width="375" height="667"/>
     </resources>
-    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+    <inferredMetricsTieBreakers>
+        <segue reference="IAJ-uD-9EG"/>
+        <segue reference="3Yb-CY-jUe"/>
+    </inferredMetricsTieBreakers>
 </document>

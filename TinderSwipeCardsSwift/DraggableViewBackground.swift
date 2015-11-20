@@ -23,6 +23,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var messageButton: UIButton!
     var checkButton: UIButton!
     var xButton: UIButton!
+    var vController: ViewController?
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -41,7 +42,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     }
 
     func setupView() -> Void {
-        self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 1)
+   //     self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 1)
 
         xButton = UIButton(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2 + 35, self.frame.size.height/2 + CARD_HEIGHT/2 + 20, 59, 59))
         xButton.setImage(UIImage(named: "color_cross"), forState: UIControlState.Normal)
@@ -61,9 +62,13 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         draggableView.information.text = exampleCardLabels[index]
         draggableView.self.backgroundColor = UIColor(patternImage: UIImage(named: exampleCardLocations[index])!) //make this dynamic
         draggableView.delegate = self
+        
+      //  self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
+
         return draggableView
     }
-
+    
+    
     func loadCards() -> Void {
         if exampleCardLabels.count > 0 {
             let numLoadedCardsCap = exampleCardLabels.count > MAX_BUFFER_SIZE ? MAX_BUFFER_SIZE : exampleCardLabels.count
@@ -80,9 +85,12 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
                     self.insertSubview(loadedCards[i], belowSubview: loadedCards[i - 1])
                 } else {
                     self.addSubview(loadedCards[i])
+
                 }
                 cardsLoadedIndex = cardsLoadedIndex + 1
             }
+            
+  //          self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
         }
     }
 
