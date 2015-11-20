@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol DraggableViewBackgroundCardsProtocol {
+    func draggableViewBackgroundisOutOfCards(draggableView:DraggableViewBackground)
+}
+
 class DraggableViewBackground: UIView, DraggableViewDelegate {
     var exampleCardLabels: [String]!
     var exampleCardLocations: [String]!
@@ -23,7 +27,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var messageButton: UIButton!
     var checkButton: UIButton!
     var xButton: UIButton!
-    var vController: ViewController?
+    var delegate : DraggableViewBackgroundCardsProtocol?
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -90,6 +94,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
                 cardsLoadedIndex = cardsLoadedIndex + 1
             }
             
+            
+            
   //          self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 0)
         }
     }
@@ -101,6 +107,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
             loadedCards.append(allCards[cardsLoadedIndex])
             cardsLoadedIndex = cardsLoadedIndex + 1
             self.insertSubview(loadedCards[MAX_BUFFER_SIZE - 1], belowSubview: loadedCards[MAX_BUFFER_SIZE - 2])
+        } else {
+            delegate?.draggableViewBackgroundisOutOfCards(self)
         }
     }
     
@@ -111,6 +119,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
             loadedCards.append(allCards[cardsLoadedIndex])
             cardsLoadedIndex = cardsLoadedIndex + 1
             self.insertSubview(loadedCards[MAX_BUFFER_SIZE - 1], belowSubview: loadedCards[MAX_BUFFER_SIZE - 2])
+        } else {
+            delegate?.draggableViewBackgroundisOutOfCards(self)
         }
     }
 
