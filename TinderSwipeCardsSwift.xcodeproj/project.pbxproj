@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B1DEBE1BFED1B800A0F31D /* Home w_ buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */; };
+		00B1DEC01BFED5FB00A0F31D /* Results.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B1DEBF1BFED5FB00A0F31D /* Results.png */; };
 		35B4FB321BFE7FEA001B83C1 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */; };
 		35B4FB331BFE7FEA001B83C1 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */; };
 		35B4FB341BFE7FEA001B83C1 /* Artboard 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home w_ buttons.png"; sourceTree = SOURCE_ROOT; };
+		00B1DEBF1BFED5FB00A0F31D /* Results.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Results.png; sourceTree = SOURCE_ROOT; };
 		35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1.png"; sourceTree = "<group>"; };
 		35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 2.png"; sourceTree = "<group>"; };
 		35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 3.png"; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				00B1DEBF1BFED5FB00A0F31D /* Results.png */,
+				00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */,
 				35B4FB281BFE7FEA001B83C1 /* Artboard 1.png */,
 				35B4FB291BFE7FEA001B83C1 /* Artboard 2.png */,
 				35B4FB2A1BFE7FEA001B83C1 /* Artboard 3.png */,
@@ -243,6 +249,8 @@
 				35B4FB3A1BFE7FEA001B83C1 /* Artboard 9.png in Resources */,
 				CC2D00351AF1D31400AF5C5F /* LaunchScreen.xib in Resources */,
 				CC2D00321AF1D31400AF5C5F /* Images.xcassets in Resources */,
+				00B1DEC01BFED5FB00A0F31D /* Results.png in Resources */,
+				00B1DEBE1BFED1B800A0F31D /* Home w_ buttons.png in Resources */,
 				35B4FB3B1BFE7FEA001B83C1 /* Artboard 10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

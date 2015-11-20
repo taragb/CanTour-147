@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXH-Mc-m0u">
-                                <rect key="frame" x="84" y="485" width="207" height="57"/>
+                                <rect key="frame" x="56" y="478" width="266" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="start tour">
                                     <color key="titleColor" red="0.23921568627450979" green="0.78823529411764703" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,6 +55,11 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="SEd-H5-0sF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home w_ buttons.png" translatesAutoresizingMaskIntoConstraints="NO" id="M1j-Gx-125">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -65,4 +70,8 @@
             <point key="canvasLocation" x="-1505.5" y="-1186.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home w_ buttons.png" width="375" height="667"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
