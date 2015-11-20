@@ -16,11 +16,15 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
         var draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         draggableBackground.delegate = self
         self.view.addSubview(draggableBackground)
+
       //  draggableBackground.delete()
         
        //draggableBackground.viewController = self
-
-        performSegueWithIdentifier("QuiztoResults", sender: nil)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
