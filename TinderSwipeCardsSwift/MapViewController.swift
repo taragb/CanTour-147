@@ -12,7 +12,7 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     
     @IBAction func onTap(sender: AnyObject) {
         UIView.animateWithDuration(1, animations: {
-            self.Map.center.y += 100
+            self.Map.center.x -= 100
         })
     }
     //@IBOutlet weak var Map: UIImageView!
