@@ -78,6 +78,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="hjR-XH-iQS" kind="show" id="9xP-GU-eU0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,6 +92,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhm-Bq-XDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-602.5" y="-445.5"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="pVn-KX-Jda">
+            <objects>
+                <viewController title="Map View Controller" id="hjR-XH-iQS" customClass="MapViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fV-ax-DNX"/>
+                        <viewControllerLayoutGuide type="bottom" id="UdI-Jp-2JX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3sw-ab-a1U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map1a.png" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-9g-LUl">
+                                <rect key="frame" x="0.0" y="-31" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Map" destination="IPA-9g-LUl" id="Wrr-qT-vqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkc-1K-QE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602.5" y="372.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -263,6 +293,7 @@
     </scenes>
     <resources>
         <image name="Home w: blankbuttons.png" width="375" height="667"/>
+        <image name="Map1a.png" width="750" height="749"/>
         <image name="Popular Results white buttons.png" width="375" height="667"/>
         <image name="Results personalized tour.png" width="375" height="667"/>
     </resources>

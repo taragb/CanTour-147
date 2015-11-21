@@ -29,6 +29,8 @@
 		8644E4F91C000BF200EA73FA /* Popular Results white buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4F71C000BF200EA73FA /* Popular Results white buttons.png */; };
 		8644E4FA1C000BF200EA73FA /* Results personalized tour.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4F81C000BF200EA73FA /* Results personalized tour.png */; };
 		8644E4FC1C00F55E00EA73FA /* Artboard Blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */; };
+		8644E4FE1C00F7E500EA73FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8644E4FD1C00F7E500EA73FA /* MapViewController.swift */; };
+		8644E5001C00F8F700EA73FA /* Map1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4FF1C00F8F700EA73FA /* Map1a.png */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		8644E4F71C000BF200EA73FA /* Popular Results white buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popular Results white buttons.png"; sourceTree = "<group>"; };
 		8644E4F81C000BF200EA73FA /* Results personalized tour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Results personalized tour.png"; sourceTree = "<group>"; };
 		8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard Blank.png"; sourceTree = "<group>"; };
+		8644E4FD1C00F7E500EA73FA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8644E4FF1C00F8F700EA73FA /* Map1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map1a.png; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8644E4F31C00059600EA73FA /* Results blank buttons.png */,
+				8644E4FF1C00F8F700EA73FA /* Map1a.png */,
 				8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */,
 				8644E4F51C0006BE00EA73FA /* Popular Results.png */,
 				8644E4F11C00044C00EA73FA /* Home w: blankbuttons.png */,
@@ -153,6 +158,7 @@
 				CC2D004A1AF1D3FA00AF5C5F /* DraggableView.swift */,
 				CC2D004C1AF1D70D00AF5C5F /* OverlayView.swift */,
 				CC2D002E1AF1D31400AF5C5F /* Main.storyboard */,
+				8644E4FD1C00F7E500EA73FA /* MapViewController.swift */,
 				009B11F01BFEF863000457D5 /* ResultsViewController.swift */,
 				8644E4EF1BFFFD3400EA73FA /* TopResultsViewController.swift */,
 				009B11EE1BFEF79E000457D5 /* HomeScreenViewController.swift */,
@@ -278,6 +284,7 @@
 				8644E4F91C000BF200EA73FA /* Popular Results white buttons.png in Resources */,
 				35B4FB351BFE7FEA001B83C1 /* Artboard 4.png in Resources */,
 				35B4FB341BFE7FEA001B83C1 /* Artboard 3.png in Resources */,
+				8644E5001C00F8F700EA73FA /* Map1a.png in Resources */,
 				35B4FB361BFE7FEA001B83C1 /* Artboard 5.png in Resources */,
 				35B4FB381BFE7FEA001B83C1 /* Artboard 7.png in Resources */,
 				35B4FB3A1BFE7FEA001B83C1 /* Artboard 9.png in Resources */,
@@ -310,6 +317,7 @@
 				CC2D004D1AF1D70D00AF5C5F /* OverlayView.swift in Sources */,
 				CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */,
 				009B11F11BFEF863000457D5 /* ResultsViewController.swift in Sources */,
+				8644E4FE1C00F7E500EA73FA /* MapViewController.swift in Sources */,
 				CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */,
 				8644E4F01BFFFD3400EA73FA /* TopResultsViewController.swift in Sources */,
 				CC2D004F1AF2107800AF5C5F /* DraggableViewBackground.swift in Sources */,
