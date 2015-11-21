@@ -9,6 +9,7 @@
 import UIKit
 
 class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDataSource */{
+    var bgImage: UIImageView?
     
     @IBAction func onTap(sender: AnyObject) {
         UIView.animateWithDuration(1, animations: {
@@ -21,6 +22,11 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        var image: UIImage = UIImage(named: "Map1a")!
+        bgImage = UIImageView(image: image)
+        bgImage!.frame = CGRectMake(-500,-500,2074,2276) //750,749)
+        self.view.addSubview(bgImage!)
         
     }
     
@@ -41,10 +47,17 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
         super.viewDidAppear(animated)
     
         Map.transform = CGAffineTransformMakeScale(2,2)
-        Map.frame = CGRect(x: 200, y: 20, width: Map.frame.size.width, height: Map.frame.size.height);
+        Map.frame = CGRectMake(20, 20, Map.frame.size.width, Map.frame.size.height);
+        print(Map.frame.size.width)
+        print("     ")
+        print(Map.frame.size.height)
 
         Map.hidden = false
-        
+//        
+//        bgImage = UIImageView(image: image)
+//        bgImage!.frame = CGRectMake(0,0,100,200)
+//        self.view.addSubview(bgImage!)
+//        
    
     
     }    
