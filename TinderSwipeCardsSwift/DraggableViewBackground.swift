@@ -12,6 +12,16 @@ protocol DraggableViewBackgroundCardsProtocol {
     func draggableViewBackgroundisOutOfCards(draggableView:DraggableViewBackground)
 }
 
+extension Array {
+    mutating func shuffle() {
+        if count < 2 { return }
+        for i in 0..<(count - 1) {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            swap(&self[i], &self[j])
+        }
+    }
+}
+
 class DraggableViewBackground: UIView, DraggableViewDelegate {
     var exampleCardLabels: [String]!
     var exampleCardLocations: [String]!
@@ -37,14 +47,17 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["", "", "", "", "", "", "", "", "", ""]
+        exampleCardLabels = ["", "", "", "", "", "", "", "", "", "", ""]
         exampleCardLocations = ["Artboard 1.png", "Artboard 2.png", "Artboard 3.png", "Artboard 4.png", "Artboard 5.png", "Artboard 6.png", "Artboard 7.png", "Artboard 8.png", "Artboard 9.png", "Artboard 10.png"]
+        exampleCardLocations.shuffle()
+        exampleCardLocations.append("Artboard Blank")
         allCards = []
         loadedCards = []
         cardsLoadedIndex = 0
         self.loadCards()
     }
-
+    
+    
     func setupView() -> Void {
    //     self.backgroundColor = UIColor(red: 0.92, green: 0.93, blue: 0.95, alpha: 1)
 
@@ -103,6 +116,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     func cardSwipedLeft(card: UIView) -> Void {
         loadedCards.removeAtIndex(0)
 
+        print(cardsLoadedIndex)
+        
         if cardsLoadedIndex < allCards.count {
             loadedCards.append(allCards[cardsLoadedIndex])
             cardsLoadedIndex = cardsLoadedIndex + 1
@@ -114,6 +129,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     
     func cardSwipedRight(card: UIView) -> Void {
         loadedCards.removeAtIndex(0)
+        
+        print(cardsLoadedIndex)
         
         if cardsLoadedIndex < allCards.count {
             loadedCards.append(allCards[cardsLoadedIndex])

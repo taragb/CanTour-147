@@ -3,7 +3,6 @@
 //  TinderSwipeCardsSwift
 //
 //  Created by Shubha Srinivas Raghvendra on 11/19/15.
-//  Copyright (c) 2015 gcweb. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +15,26 @@ class ResultsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Results"
+        
+        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        myBackButton.addTarget(self, action: "popToHome:", forControlEvents: UIControlEvents.TouchUpInside)
+        myBackButton.setTitle("Home", forState: UIControlState.Normal)
+        let tealColor = UIColor(
+            red:61.0/255,
+            green:201.0/255,
+            blue:179.0/255,
+            alpha:1.0)
+        myBackButton.setTitleColor(tealColor, forState: UIControlState.Normal)
+        myBackButton.sizeToFit()
+        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
+        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+
+        
+    }
+    
+    func popToHome(sender:UIBarButtonItem){
+        self.navigationController?.popToRootViewControllerAnimated(true)
+//        self.navigationController?.popToViewController(TopResultsViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

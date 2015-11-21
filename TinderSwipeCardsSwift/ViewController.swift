@@ -11,15 +11,13 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = ""
         // Do any additional setup after loading the view, typically from a nib.
-
+        
         var draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         draggableBackground.delegate = self
         self.view.addSubview(draggableBackground)
-
-      //  draggableBackground.delete()
         
-       //draggableBackground.viewController = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -34,6 +32,10 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
 
     
     func draggableViewBackgroundisOutOfCards(draggableView: DraggableViewBackground) {
+//         self.navigationItem.title = "Quiz"
+         self.title = "Quiz"
+//         sleep(1)
+         usleep(1000)
          performSegueWithIdentifier("QuiztoResults", sender: nil)
     }
 

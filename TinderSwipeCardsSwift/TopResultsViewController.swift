@@ -14,6 +14,8 @@ class TopResultsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationItem.title = "Results"
     }
 
     override func didReceiveMemoryWarning() {
