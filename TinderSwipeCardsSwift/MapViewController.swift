@@ -10,23 +10,44 @@ import UIKit
 
 class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDataSource */{
     var bgImage: UIImageView?
+    var count: Int?
+    
     
     @IBAction func onTap(sender: AnyObject) {
-        UIView.animateWithDuration(1, animations: {
-            self.Map.center.x -= 100
-        })
+        print(count)
+        if count == 0 {
+            UIView.animateWithDuration(1, animations: {
+                self.bgImage!.center.x += 389
+            })
+            count! += 1
+        } else if count == 1 {
+            UIView.animateWithDuration(1, animations: {
+                self.bgImage!.center.y += 121
+            })
+            count! += 1
+        }
+        else if count == 2 {
+            UIView.animateWithDuration(1, animations: {
+                self.bgImage!.center.x += 133
+            })
+            count! += 1
+        }
+        else if count == 3 {
+            UIView.animateWithDuration(1, animations: {
+                self.bgImage!.center.y += 40
+            })
+        }
     }
-    //@IBOutlet weak var Map: UIImageView!
     
-    @IBOutlet weak var Map: UIImageView!
     override func viewDidLoad() {
-        
+        count = 0
         super.viewDidLoad()
         
         var image: UIImage = UIImage(named: "Map1a")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-500,-500,2074,2276) //750,749)
+        bgImage!.frame = CGRectMake(-957,-1250,2074,2276) //750,749)
         self.view.addSubview(bgImage!)
+        self.view.sendSubviewToBack(bgImage!)
         
     }
     
@@ -46,18 +67,13 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     
-        Map.transform = CGAffineTransformMakeScale(2,2)
-        Map.frame = CGRectMake(20, 20, Map.frame.size.width, Map.frame.size.height);
-        print(Map.frame.size.width)
+//        bgImage!.transform = CGAffineTransformMakeScale(2,2)
+//        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
+        print(bgImage!.frame.size.width)
         print("     ")
-        print(Map.frame.size.height)
+        print(bgImage!.frame.size.height)
 
-        Map.hidden = false
-//        
-//        bgImage = UIImageView(image: image)
-//        bgImage!.frame = CGRectMake(0,0,100,200)
-//        self.view.addSubview(bgImage!)
-//        
+        bgImage!.hidden = false
    
     
     }    

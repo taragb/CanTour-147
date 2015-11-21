@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A36D61C01362600982D8B /* grey_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D31C01362600982D8B /* grey_locator.png */; };
+		000A36D71C01362600982D8B /* orange_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D41C01362600982D8B /* orange_locator.png */; };
+		000A36D81C01362600982D8B /* teal_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D51C01362600982D8B /* teal_locator.png */; };
 		009B11EF1BFEF79E000457D5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B11EE1BFEF79E000457D5 /* HomeScreenViewController.swift */; };
 		009B11F11BFEF863000457D5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B11F01BFEF863000457D5 /* ResultsViewController.swift */; };
 		00B1DEBE1BFED1B800A0F31D /* Home w_ buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000A36D31C01362600982D8B /* grey_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_locator.png; sourceTree = "<group>"; };
+		000A36D41C01362600982D8B /* orange_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_locator.png; sourceTree = "<group>"; };
+		000A36D51C01362600982D8B /* teal_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teal_locator.png; sourceTree = "<group>"; };
 		009B11EE1BFEF79E000457D5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		009B11F01BFEF863000457D5 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home w_ buttons.png"; sourceTree = SOURCE_ROOT; };
@@ -133,6 +139,9 @@
 		CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				000A36D31C01362600982D8B /* grey_locator.png */,
+				000A36D41C01362600982D8B /* orange_locator.png */,
+				000A36D51C01362600982D8B /* teal_locator.png */,
 				8644E4F31C00059600EA73FA /* Results blank buttons.png */,
 				86CEB81C1C012C6C00D900AC /* Map1a.png */,
 				8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */,
@@ -274,10 +283,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A36D81C01362600982D8B /* teal_locator.png in Resources */,
 				8644E4F41C00059600EA73FA /* Results blank buttons.png in Resources */,
 				CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */,
 				35B4FB321BFE7FEA001B83C1 /* Artboard 1.png in Resources */,
 				35B4FB331BFE7FEA001B83C1 /* Artboard 2.png in Resources */,
+				000A36D71C01362600982D8B /* orange_locator.png in Resources */,
 				35B4FB391BFE7FEA001B83C1 /* Artboard 8.png in Resources */,
 				35B4FB371BFE7FEA001B83C1 /* Artboard 6.png in Resources */,
 				8644E4FC1C00F55E00EA73FA /* Artboard Blank.png in Resources */,
@@ -288,6 +299,7 @@
 				35B4FB361BFE7FEA001B83C1 /* Artboard 5.png in Resources */,
 				35B4FB381BFE7FEA001B83C1 /* Artboard 7.png in Resources */,
 				35B4FB3A1BFE7FEA001B83C1 /* Artboard 9.png in Resources */,
+				000A36D61C01362600982D8B /* grey_locator.png in Resources */,
 				8644E4FA1C000BF200EA73FA /* Results personalized tour.png in Resources */,
 				CC2D00351AF1D31400AF5C5F /* LaunchScreen.xib in Resources */,
 				CC2D00321AF1D31400AF5C5F /* Images.xcassets in Resources */,
