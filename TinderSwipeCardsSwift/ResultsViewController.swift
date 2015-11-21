@@ -16,7 +16,7 @@ class ResultsViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Results"
         
-        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton  //XCODE VERSION CHANGE: as! instead of as
         myBackButton.addTarget(self, action: "popToHome:", forControlEvents: UIControlEvents.TouchUpInside)
         myBackButton.setTitle("Home", forState: UIControlState.Normal)
         let tealColor = UIColor(
