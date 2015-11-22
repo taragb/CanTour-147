@@ -1,14 +1,14 @@
 //
-//  MapViewController.swift
+//  Map2ViewController.swift
 //  TinderSwipeCardsSwift
 //
-//  Created by Tara Balakrishnan on 11/21/15.
+//  Created by Shubha Srinivas Raghvendra on 11/21/15.
 //  Copyright (c) 2015 gcweb. All rights reserved.
 //
 
 import UIKit
 
-class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDataSource */{
+class Map2ViewController: UIViewController {
     var bgImage: UIImageView?
     var count: Int?
     
@@ -17,40 +17,24 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
         print(count)
         if count == 0 {
             UIView.animateWithDuration(1, animations: {
-                self.bgImage!.center.x += 389
-            })
-            count! += 1
-        } else if count == 1 {
-            UIView.animateWithDuration(1, animations: {
-                self.bgImage!.center.y += 121
+                self.bgImage!.center.y += 359
             })
             count! += 1
         }
-        else if count == 2 {
-            UIView.animateWithDuration(1, animations: {
-                self.bgImage!.center.x += 133
-            })
-            count! += 1
+        else if count == 1 {
+            print(" going to map 3")
+            performSegueWithIdentifier("seePOI2", sender: nil)
         }
-        else if count == 3 {
-            UIView.animateWithDuration(1, animations: {
-                self.bgImage!.center.y += 40
-            })
-            count! += 1
-        }
-        else if count == 4 {
-            performSegueWithIdentifier("seePOI1", sender: nil)
-        }
-
+        
     }
     
     override func viewDidLoad() {
         count = 0
         super.viewDidLoad()
         
-        var image: UIImage = UIImage(named: "Map1a")!
+        var image: UIImage = UIImage(named: "Map1b")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-957,-1250,2074,2276) //750,749)
+        bgImage!.frame = CGRectMake(-435,-1089,2074,2276) //750,749)
         self.view.addSubview(bgImage!)
         self.view.sendSubviewToBack(bgImage!)
         
@@ -66,20 +50,19 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
         //let barFrame = CGRectMake(Map.center.x-600, Map.center.y-100, 290, 50)
         //progressView?.frame = barFrame
         
-       // Map.center.x -= view.bounds.width*10
+        // Map.center.x -= view.bounds.width*10
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-    
-//        bgImage!.transform = CGAffineTransformMakeScale(2,2)
-//        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
+        
         print(bgImage!.frame.size.width)
         print("     ")
         print(bgImage!.frame.size.height)
-
+        
         bgImage!.hidden = false
-   
-    
-    }    
+        
+        
+    }
+
 }

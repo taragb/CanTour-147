@@ -10,6 +10,10 @@
 		000A36D61C01362600982D8B /* grey_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D31C01362600982D8B /* grey_locator.png */; };
 		000A36D71C01362600982D8B /* orange_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D41C01362600982D8B /* orange_locator.png */; };
 		000A36D81C01362600982D8B /* teal_locator.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36D51C01362600982D8B /* teal_locator.png */; };
+		000A36DA1C013BC900982D8B /* POI1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A36D91C013BC900982D8B /* POI1ViewController.swift */; };
+		000A36DC1C013D7200982D8B /* Map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A36DB1C013D7200982D8B /* Map2ViewController.swift */; };
+		000A36DE1C01407600982D8B /* POI2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A36DD1C01407600982D8B /* POI2ViewController.swift */; };
+		000A36E01C0141B500982D8B /* Map1b.png in Resources */ = {isa = PBXBuildFile; fileRef = 000A36DF1C0141B500982D8B /* Map1b.png */; };
 		009B11EF1BFEF79E000457D5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B11EE1BFEF79E000457D5 /* HomeScreenViewController.swift */; };
 		009B11F11BFEF863000457D5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B11F01BFEF863000457D5 /* ResultsViewController.swift */; };
 		00B1DEBE1BFED1B800A0F31D /* Home w_ buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */; };
@@ -59,6 +63,10 @@
 		000A36D31C01362600982D8B /* grey_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_locator.png; sourceTree = "<group>"; };
 		000A36D41C01362600982D8B /* orange_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_locator.png; sourceTree = "<group>"; };
 		000A36D51C01362600982D8B /* teal_locator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teal_locator.png; sourceTree = "<group>"; };
+		000A36D91C013BC900982D8B /* POI1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POI1ViewController.swift; sourceTree = "<group>"; };
+		000A36DB1C013D7200982D8B /* Map2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map2ViewController.swift; sourceTree = "<group>"; };
+		000A36DD1C01407600982D8B /* POI2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POI2ViewController.swift; sourceTree = "<group>"; };
+		000A36DF1C0141B500982D8B /* Map1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map1b.png; sourceTree = "<group>"; };
 		009B11EE1BFEF79E000457D5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		009B11F01BFEF863000457D5 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		00B1DEBD1BFED1B800A0F31D /* Home w_ buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home w_ buttons.png"; sourceTree = SOURCE_ROOT; };
@@ -140,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				000A36D31C01362600982D8B /* grey_locator.png */,
+				000A36DF1C0141B500982D8B /* Map1b.png */,
 				000A36D41C01362600982D8B /* orange_locator.png */,
 				000A36D51C01362600982D8B /* teal_locator.png */,
 				8644E4F31C00059600EA73FA /* Results blank buttons.png */,
@@ -167,6 +176,9 @@
 				CC2D004A1AF1D3FA00AF5C5F /* DraggableView.swift */,
 				CC2D004C1AF1D70D00AF5C5F /* OverlayView.swift */,
 				CC2D002E1AF1D31400AF5C5F /* Main.storyboard */,
+				000A36DD1C01407600982D8B /* POI2ViewController.swift */,
+				000A36DB1C013D7200982D8B /* Map2ViewController.swift */,
+				000A36D91C013BC900982D8B /* POI1ViewController.swift */,
 				8644E4FD1C00F7E500EA73FA /* MapViewController.swift */,
 				009B11F01BFEF863000457D5 /* ResultsViewController.swift */,
 				8644E4EF1BFFFD3400EA73FA /* TopResultsViewController.swift */,
@@ -286,6 +298,7 @@
 				000A36D81C01362600982D8B /* teal_locator.png in Resources */,
 				8644E4F41C00059600EA73FA /* Results blank buttons.png in Resources */,
 				CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */,
+				000A36E01C0141B500982D8B /* Map1b.png in Resources */,
 				35B4FB321BFE7FEA001B83C1 /* Artboard 1.png in Resources */,
 				35B4FB331BFE7FEA001B83C1 /* Artboard 2.png in Resources */,
 				000A36D71C01362600982D8B /* orange_locator.png in Resources */,
@@ -325,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000A36DC1C013D7200982D8B /* Map2ViewController.swift in Sources */,
 				CC2D004B1AF1D3FA00AF5C5F /* DraggableView.swift in Sources */,
 				CC2D004D1AF1D70D00AF5C5F /* OverlayView.swift in Sources */,
 				CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */,
@@ -332,6 +346,8 @@
 				8644E4FE1C00F7E500EA73FA /* MapViewController.swift in Sources */,
 				CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */,
 				8644E4F01BFFFD3400EA73FA /* TopResultsViewController.swift in Sources */,
+				000A36DE1C01407600982D8B /* POI2ViewController.swift in Sources */,
+				000A36DA1C013BC900982D8B /* POI1ViewController.swift in Sources */,
 				CC2D004F1AF2107800AF5C5F /* DraggableViewBackground.swift in Sources */,
 				009B11EF1BFEF79E000457D5 /* HomeScreenViewController.swift in Sources */,
 			);

@@ -117,14 +117,163 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-Sq-iZ3">
                                 <rect key="frame" x="121" y="302" width="132" height="63"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-DW-0Kr">
+                                <rect key="frame" x="329" y="623" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.15686274509803921" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y4u-DL-4lb" kind="show" id="hok-Zf-tUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="o0j-IJ-tRH" kind="show" identifier="seePOI1" id="xGj-ao-t42"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkc-1K-QE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602.5" y="380.5"/>
+        </scene>
+        <!--POI 1 View Controller-->
+        <scene sceneID="DZZ-na-KEr">
+            <objects>
+                <viewController title="POI 1 View Controller" id="o0j-IJ-tRH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2z8-0B-OWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bs0-eN-N6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ELf-ue-VTg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWz-1o-wXI">
+                                <rect key="frame" x="131" y="333" width="112" height="30"/>
+                                <state key="normal" title="Go To Next Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y4u-DL-4lb" kind="show" id="AiS-63-gjn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkc-1K-QE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aw7-bN-wm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602.5" y="380.5"/>
+            <point key="canvasLocation" x="-346.5" y="1186.5"/>
+        </scene>
+        <!--POI 2 View Controller-->
+        <scene sceneID="kLS-Ol-7Iw">
+            <objects>
+                <viewController title="POI 2 View Controller" id="MtD-R6-3B8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iNc-sf-jet"/>
+                        <viewControllerLayoutGuide type="bottom" id="onO-gD-yhA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MyW-s1-b1x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-6o-RhM">
+                                <rect key="frame" x="125" y="334" width="112" height="30"/>
+                                <state key="normal" title="Go To Next Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bNN-TD-3Lz" kind="show" id="UUb-DE-itq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YY6-N5-uRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219.5" y="1186.5"/>
+        </scene>
+        <!--Map 2 View Controller-->
+        <scene sceneID="lL5-fW-Top">
+            <objects>
+                <viewController title="Map 2 View Controller" id="y4u-DL-4lb" customClass="Map2ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="As5-jC-OSJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jm5-ZD-IiQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oNF-ea-acR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hO-Vu-asH">
+                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-G4-mB8">
+                                <rect key="frame" x="329" y="623" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-CL-Hvw">
+                                <rect key="frame" x="291" y="618" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hjR-XH-iQS" kind="show" id="B9i-yd-sSc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kl-mv-LlT">
+                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="XSh-ZN-3dN"/>
+                                    <action selector="onTap:" destination="y4u-DL-4lb" eventType="touchUpInside" id="oL0-rF-fAr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="MtD-R6-3B8" kind="show" identifier="seePOI2" id="Vu3-yL-dW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWq-d5-cRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.5" y="370.5"/>
+        </scene>
+        <!--Map 3 View Controller-->
+        <scene sceneID="nL1-Fj-A05">
+            <objects>
+                <viewController title="Map 3 View Controller" id="bNN-TD-3Lz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LoN-Xp-1ni"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJi-Gn-lCc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CKi-4H-xoh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvv-cw-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.5" y="370.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -303,4 +452,8 @@
         <image name="Results personalized tour.png" width="375" height="667"/>
         <image name="grey_locator.png" width="700" height="700"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B9i-yd-sSc"/>
+        <segue reference="AiS-63-gjn"/>
+    </inferredMetricsTieBreakers>
 </document>
