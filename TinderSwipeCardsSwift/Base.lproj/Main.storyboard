@@ -105,14 +105,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-7G-eUy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
-                                <state key="normal">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-AQ-WzQ">
+                                <rect key="frame" x="291" y="618" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="B4m-0T-CcH"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-Sq-iZ3">
                                 <rect key="frame" x="121" y="302" width="132" height="63"/>
@@ -126,6 +125,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="y4u-DL-4lb" kind="show" id="hok-Zf-tUK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-7G-eUy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="B4m-0T-CcH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -143,7 +151,7 @@
         <!--POI 1 View Controller-->
         <scene sceneID="DZZ-na-KEr">
             <objects>
-                <viewController title="POI 1 View Controller" id="o0j-IJ-tRH" sceneMemberID="viewController">
+                <viewController title="POI 1 View Controller" id="o0j-IJ-tRH" customClass="POI1ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2z8-0B-OWV"/>
                         <viewControllerLayoutGuide type="bottom" id="bs0-eN-N6h"/>
@@ -173,7 +181,7 @@
         <!--POI 2 View Controller-->
         <scene sceneID="kLS-Ol-7Iw">
             <objects>
-                <viewController title="POI 2 View Controller" id="MtD-R6-3B8" sceneMemberID="viewController">
+                <viewController title="POI 2 View Controller" id="MtD-R6-3B8" customClass="POI2ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iNc-sf-jet"/>
                         <viewControllerLayoutGuide type="bottom" id="onO-gD-yhA"/>
@@ -200,6 +208,183 @@
             </objects>
             <point key="canvasLocation" x="219.5" y="1186.5"/>
         </scene>
+        <!--Map 4 View Controller-->
+        <scene sceneID="sRo-ep-0R3">
+            <objects>
+                <viewController title="Map 4 View Controller" id="WQL-yZ-0VO" customClass="Map4ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Oi-Jh-o0Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZMm-HC-eJy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aA9-26-S60">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kcm-S9-5p5">
+                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vl-XO-lN5">
+                                <rect key="frame" x="329" y="617" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YXy-Eu-Vyh" kind="show" id="WZY-d7-Toh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw6-5F-6oo">
+                                <rect key="frame" x="291" y="612" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bNN-TD-3Lz" kind="show" id="G1Q-KO-plg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-bG-Dpr">
+                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="Itw-6x-AKl"/>
+                                    <action selector="onTap:" destination="bNN-TD-3Lz" eventType="touchUpInside" id="d3a-m4-rJM"/>
+                                    <action selector="onTap:" destination="y4u-DL-4lb" eventType="touchUpInside" id="g6A-hj-o4g"/>
+                                    <action selector="onTap:" destination="WQL-yZ-0VO" eventType="touchUpInside" id="iYC-hH-wtx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Bq0-sw-idH" kind="show" identifier="seePOI4" id="UK6-ZH-xZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uD-US-4Wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065.5" y="370.5"/>
+        </scene>
+        <!--Map 5 View Controller-->
+        <scene sceneID="7wG-ws-0hW">
+            <objects>
+                <viewController title="Map 5 View Controller" id="YXy-Eu-Vyh" customClass="Map5ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ZT-ED-6o2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eeg-He-vfq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I0A-4Z-fKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="AgF-Tz-ONx">
+                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4v-WV-ZlX">
+                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="y4u-DL-4lb" eventType="touchUpInside" id="2KS-Fo-Cf0"/>
+                                    <action selector="onTap:" destination="bNN-TD-3Lz" eventType="touchUpInside" id="ZNn-Mg-JCo"/>
+                                    <action selector="onTap:" destination="YXy-Eu-Vyh" eventType="touchUpInside" id="eny-ny-16C"/>
+                                    <action selector="onTap:" destination="WQL-yZ-0VO" eventType="touchUpInside" id="hvJ-X1-PQ6"/>
+                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="rTp-kj-0PW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52i-5e-6Bx">
+                                <rect key="frame" x="329" y="623" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtW-f7-HOW">
+                                <rect key="frame" x="291" y="618" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WQL-yZ-0VO" kind="show" id="nhu-Ta-S9x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0x-44-nZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561.5" y="370.5"/>
+        </scene>
+        <!--POI 3 View Controller-->
+        <scene sceneID="gcy-5p-N3U">
+            <objects>
+                <viewController title="POI 3 View Controller" id="KiR-88-8bf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hOV-x4-tYA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mzz-aU-zqT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rzW-9b-1fP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-jG-Fcd">
+                                <rect key="frame" x="131" y="319" width="112" height="30"/>
+                                <state key="normal" title="Go To Next Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WQL-yZ-0VO" kind="show" id="LkY-LS-0X5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gn2-rd-D0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774.5" y="1186.5"/>
+        </scene>
+        <!--POI 4 View Controller-->
+        <scene sceneID="xGL-YR-bjg">
+            <objects>
+                <viewController title="POI 4 View Controller" id="Bq0-sw-idH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2PQ-AN-LE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="lH4-x3-zwe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJw-GO-jsk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-CG-aqQ">
+                                <rect key="frame" x="131" y="319" width="112" height="30"/>
+                                <state key="normal" title="Go To Next Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YXy-Eu-Vyh" kind="show" id="3nK-hl-N5M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3k-EB-R6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348.5" y="1186.5"/>
+        </scene>
         <!--Map 2 View Controller-->
         <scene sceneID="lL5-fW-Top">
             <objects>
@@ -222,6 +407,9 @@
                                     <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bNN-TD-3Lz" kind="show" id="GlN-WU-ten"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-CL-Hvw">
                                 <rect key="frame" x="291" y="618" width="30" height="41"/>
@@ -259,7 +447,7 @@
         <!--Map 3 View Controller-->
         <scene sceneID="nL1-Fj-A05">
             <objects>
-                <viewController title="Map 3 View Controller" id="bNN-TD-3Lz" sceneMemberID="viewController">
+                <viewController title="Map 3 View Controller" id="bNN-TD-3Lz" customClass="Map3ViewController" customModule="TinderSwipeCardsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LoN-Xp-1ni"/>
                         <viewControllerLayoutGuide type="bottom" id="fJi-Gn-lCc"/>
@@ -267,9 +455,50 @@
                     <view key="view" contentMode="scaleToFill" id="CKi-4H-xoh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIG-T6-vXB">
+                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="y4u-DL-4lb" eventType="touchUpInside" id="fYA-x0-Ar3"/>
+                                    <action selector="onTap:" destination="hjR-XH-iQS" eventType="touchUpInside" id="tQd-37-fIk"/>
+                                    <action selector="onTap:" destination="bNN-TD-3Lz" eventType="touchUpInside" id="unO-LO-gcz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="aH5-ts-mJo">
+                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-uQ-Dbm">
+                                <rect key="frame" x="339" y="623" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WQL-yZ-0VO" kind="show" id="pl3-wb-3rS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETB-Gc-L0k">
+                                <rect key="frame" x="301" y="618" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y4u-DL-4lb" kind="show" id="pjc-mH-SlZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="KiR-88-8bf" kind="show" identifier="seePOI3" id="gmx-Q6-fee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvv-cw-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,7 +682,10 @@
         <image name="grey_locator.png" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B9i-yd-sSc"/>
-        <segue reference="AiS-63-gjn"/>
+        <segue reference="9xP-GU-eU0"/>
+        <segue reference="hok-Zf-tUK"/>
+        <segue reference="nhu-Ta-S9x"/>
+        <segue reference="3nK-hl-N5M"/>
+        <segue reference="G1Q-KO-plg"/>
     </inferredMetricsTieBreakers>
 </document>

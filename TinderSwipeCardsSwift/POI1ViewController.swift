@@ -41,8 +41,16 @@ class POI1ViewController: UIViewController {
         self.navigationController?.popToRootViewControllerAnimated(true)
         
 //        let switchViewController = self.navigationController?.viewControllers[1]
-        
-//        self.navigationController?.popToViewController(switchViewController, animated: true)
+//        for (var i = 0; i < self.navigationController?.viewControllers.count; i++) {
+//            if(self.navigationController?.viewControllers[i].isKindOfClass(TopResultsViewController) == true) {
+//                
+//                self.navigationController?.popToViewController(self.navigationController!.viewControllers[i] as! UIViewController, animated: true)
+//                
+//                break;
+//            }
+//        }
+        print (" trying to segue to results screen")
+        self.navigationController?.popToViewController(self.navigationController!.viewControllers[1] as! UIViewController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
