@@ -35,7 +35,7 @@ class Map5ViewController: UIViewController {
         }
         else if count == 3 {
             print(" End Tour")
-//            performSegueWithIdentifier("seePOI4", sender: nil)
+            performSegueWithIdentifier("seeEnd", sender: nil)
         }
         
     }

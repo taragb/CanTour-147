@@ -45,6 +45,7 @@
 		8644E4FA1C000BF200EA73FA /* Results personalized tour.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4F81C000BF200EA73FA /* Results personalized tour.png */; };
 		8644E4FC1C00F55E00EA73FA /* Artboard Blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */; };
 		8644E4FE1C00F7E500EA73FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8644E4FD1C00F7E500EA73FA /* MapViewController.swift */; };
+		86B9A8091C0C1497008B7050 /* Map6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B9A8081C0C1497008B7050 /* Map6ViewController.swift */; };
 		86CEB81D1C012C6C00D900AC /* Map1a.png in Resources */ = {isa = PBXBuildFile; fileRef = 86CEB81C1C012C6C00D900AC /* Map1a.png */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
@@ -106,6 +107,7 @@
 		8644E4F81C000BF200EA73FA /* Results personalized tour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Results personalized tour.png"; sourceTree = "<group>"; };
 		8644E4FB1C00F55E00EA73FA /* Artboard Blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard Blank.png"; sourceTree = "<group>"; };
 		8644E4FD1C00F7E500EA73FA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		86B9A8081C0C1497008B7050 /* Map6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map6ViewController.swift; sourceTree = "<group>"; };
 		86CEB81C1C012C6C00D900AC /* Map1a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map1a.png; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				CC2D002E1AF1D31400AF5C5F /* Main.storyboard */,
 				000A36EF1C014BF900982D8B /* Map5ViewController.swift */,
 				000A36ED1C014BE200982D8B /* POI4ViewController.swift */,
+				86B9A8081C0C1497008B7050 /* Map6ViewController.swift */,
 				000A36EB1C01498E00982D8B /* Map4ViewController.swift */,
 				000A36E91C0148AB00982D8B /* POI3ViewController.swift */,
 				000A36E11C0145C800982D8B /* Map3ViewController.swift */,
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B9A8091C0C1497008B7050 /* Map6ViewController.swift in Sources */,
 				000A36DC1C013D7200982D8B /* Map2ViewController.swift in Sources */,
 				000A36F01C014BF900982D8B /* Map5ViewController.swift in Sources */,
 				CC2D004B1AF1D3FA00AF5C5F /* DraggableView.swift in Sources */,

@@ -9,27 +9,58 @@
 import UIKit
 
 class Map6ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var bgImage: UIImageView?
+    var count: Int?
+    
+    
+    @IBAction func onTap(sender: AnyObject) {
+        print(count)
+        if count == 0 {
+            print(" End Tour")
+            //            performSegueWithIdentifier("seePOI4", sender: nil)
+        }
+        
     }
-
+    
+    override func viewDidLoad() {
+        count = 0
+        super.viewDidLoad()
+        
+        var image: UIImage = UIImage(named: "Map1e")!
+        bgImage = UIImageView(image: image)
+        bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
+        self.view.addSubview(bgImage!)
+        self.view.sendSubviewToBack(bgImage!)
+//        UIView.animateWithDuration(1, animations: {
+//            self.bgImage!.center.y -= 540
+//        })
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        //let barFrame = CGRectMake(Map.center.x-600, Map.center.y-100, 290, 50)
+        //progressView?.frame = barFrame
+        
+        // Map.center.x -= view.bounds.width*10
     }
-    */
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //        bgImage!.transform = CGAffineTransformMakeScale(2,2)
+        //        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
+        print(bgImage!.frame.size.width)
+        print("     ")
+        print(bgImage!.frame.size.height)
+        
+        bgImage!.hidden = false
+        
+        
+    }
 }
