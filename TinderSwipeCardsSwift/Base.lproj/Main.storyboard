@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U1F-wM-GOT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U1F-wM-GOT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Top Results View Controller-->
@@ -13,14 +13,20 @@
                         <viewControllerLayoutGuide type="bottom" id="YEc-hc-EfG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zy2-Hm-ua6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfa-QX-BgE">
+                                <rect key="frame" x="16" y="20" width="64" height="44"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Popular Results white buttons.png" translatesAutoresizingMaskIntoConstraints="NO" id="GIP-DV-dH6">
-                                <rect key="frame" x="0.0" y="-3" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="-47" width="375" height="595"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nee-Ns-KNN">
-                                <rect key="frame" x="58" y="223" width="259" height="44"/>
+                                <rect key="frame" x="58" y="179" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="African Art Tour">
                                     <color key="titleColor" red="0.15686275059999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -32,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHm-cc-ahx">
-                                <rect key="frame" x="58" y="292" width="259" height="44"/>
+                                <rect key="frame" x="58" y="248" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Stanford Family Tour">
                                     <color key="titleColor" red="0.15686275059999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -44,7 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD7-D9-WU4">
-                                <rect key="frame" x="58" y="364" width="259" height="44"/>
+                                <rect key="frame" x="58" y="320" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Western Art Tour">
                                     <color key="titleColor" red="0.15686275059999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -56,7 +62,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7C-gB-Pgo">
-                                <rect key="frame" x="58" y="434" width="259" height="44"/>
+                                <rect key="frame" x="58" y="390" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Contemporary Art Tour">
                                     <color key="titleColor" red="0.15686275059999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -68,7 +74,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b49-QY-ZcN">
-                                <rect key="frame" x="58" y="152" width="259" height="44"/>
+                                <rect key="frame" x="58" y="108" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Sculpture Art Tour">
                                     <color key="titleColor" red="0.15686275059999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -85,7 +91,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eP6-66-S8j"/>
+                    <navigationItem key="navigationItem" id="eP6-66-S8j">
+                        <barButtonItem key="leftBarButtonItem" title="  Home" id="X5y-jf-ZE0">
+                            <connections>
+                                <segue destination="49q-Hx-tra" kind="show" id="Qox-av-93p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -105,8 +117,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuc-HW-Mnv">
+                                <rect key="frame" x="11" y="20" width="73" height="44"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-AQ-WzQ">
-                                <rect key="frame" x="291" y="618" width="30" height="41"/>
+                                <rect key="frame" x="291" y="554" width="30" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,12 +132,12 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="VeW-Sq-iZ3">
-                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                                <rect key="frame" x="121" y="238" width="132" height="63"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-DW-0Kr">
-                                <rect key="frame" x="329" y="623" width="30" height="30"/>
+                                <rect key="frame" x="329" y="559" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <state key="normal" title=">">
                                     <color key="titleColor" red="0.14117647058823529" green="0.15686274509803921" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -128,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-7G-eUy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -139,6 +157,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MiF-5B-jpK">
+                        <barButtonItem key="leftBarButtonItem" title="  Results" id="Kbp-lB-Yf8" userLabel="Results">
+                            <connections>
+                                <segue destination="U8m-Pi-uQs" kind="show" id="ChT-cr-FfM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="o0j-IJ-tRH" kind="show" identifier="seePOI1" id="xGj-ao-t42"/>
@@ -226,7 +251,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vl-XO-lN5">
                                 <rect key="frame" x="329" y="617" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <state key="normal" title=">">
                                     <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -300,7 +325,7 @@
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52i-5e-6Bx">
                                 <rect key="frame" x="329" y="623" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <state key="normal" title=">">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -397,13 +422,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toj-m3-4bL">
+                                <rect key="frame" x="16" y="20" width="75" height="44"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_locator.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hO-Vu-asH">
-                                <rect key="frame" x="121" y="302" width="132" height="63"/>
+                                <rect key="frame" x="121" y="238" width="132" height="63"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-G4-mB8">
-                                <rect key="frame" x="329" y="623" width="30" height="30"/>
+                                <rect key="frame" x="329" y="559" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <state key="normal" title=">">
                                     <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -412,7 +443,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwH-CL-Hvw">
-                                <rect key="frame" x="291" y="618" width="30" height="41"/>
+                                <rect key="frame" x="291" y="554" width="30" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -423,7 +454,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kl-mv-LlT">
-                                <rect key="frame" x="0.0" y="52" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -435,6 +466,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Min-E8-0hv">
+                        <barButtonItem key="leftBarButtonItem" title="  Results" id="eEX-c3-X6L">
+                            <connections>
+                                <segue destination="U8m-Pi-uQs" kind="show" id="xs9-Ux-Yzw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="MtD-R6-3B8" kind="show" identifier="seePOI2" id="Vu3-yL-dW5"/>
@@ -473,7 +513,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-uQ-Dbm">
                                 <rect key="frame" x="339" y="623" width="30" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="&gt;">
+                                <state key="normal" title=">">
                                     <color key="titleColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -492,9 +532,24 @@
                                     <segue destination="y4u-DL-4lb" kind="show" id="pjc-mH-SlZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jv1-gj-WS6">
+                                <rect key="frame" x="16" y="14" width="76" height="37"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U8m-Pi-uQs" kind="show" id="NlD-0v-byJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNX-nd-RN6">
+                                <rect key="frame" x="-3" y="0.0" width="380" height="65"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="KiR-88-8bf" kind="show" identifier="seePOI3" id="gmx-Q6-fee"/>
@@ -502,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvv-cw-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547.5" y="370.5"/>
+            <point key="canvasLocation" x="510.5" y="380.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -513,7 +568,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.89184816919191912" green="0.89184816919191912" blue="0.89184816919191912" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -534,14 +589,14 @@
                         <viewControllerLayoutGuide type="bottom" id="WRZ-yr-3zu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Thc-g9-m2L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Results personalized tour.png" translatesAutoresizingMaskIntoConstraints="NO" id="85w-bA-du8">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtD-VO-7nH">
-                                <rect key="frame" x="58" y="153" width="259" height="44"/>
+                                <rect key="frame" x="58" y="81" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Your Personalized Tour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -553,7 +608,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-Ac-fZu">
-                                <rect key="frame" x="58" y="304" width="259" height="44"/>
+                                <rect key="frame" x="58" y="232" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Modern Art Tour">
                                     <color key="titleColor" red="0.14901961386203766" green="0.7882353663444519" blue="0.70588237047195435" alpha="1" colorSpace="deviceRGB"/>
@@ -565,7 +620,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ven-Rc-Oul">
-                                <rect key="frame" x="58" y="376" width="259" height="44"/>
+                                <rect key="frame" x="58" y="304" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Stanford Family Tour">
                                     <color key="titleColor" red="0.14901961389999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -577,7 +632,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-rV-pam">
-                                <rect key="frame" x="58" y="446" width="259" height="44"/>
+                                <rect key="frame" x="58" y="374" width="259" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Sculpture Art Tour">
                                     <color key="titleColor" red="0.14901961389999999" green="0.78823536630000002" blue="0.70588237050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -606,7 +661,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sDj-IF-h2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d0w-3s-cFb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home w: blankbuttons.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rq-RO-B83">
@@ -615,7 +670,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="viewToursBtn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-hg-zww">
-                                <rect key="frame" x="53" y="564" width="269" height="40"/>
+                                <rect key="frame" x="53" y="565" width="269" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="View Tours">
@@ -627,7 +682,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXH-Mc-m0u">
-                                <rect key="frame" x="56" y="478" width="266" height="44"/>
+                                <rect key="frame" x="54" y="478" width="266" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Begin Quiz">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -656,7 +711,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1F-wM-GOT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rQo-NT-SNC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rQo-NT-SNC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.23921568627450979" green="0.78823529411764703" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
@@ -682,10 +737,12 @@
         <image name="grey_locator.png" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9xP-GU-eU0"/>
-        <segue reference="hok-Zf-tUK"/>
-        <segue reference="nhu-Ta-S9x"/>
+        <segue reference="GlN-WU-ten"/>
+        <segue reference="pjc-mH-SlZ"/>
+        <segue reference="B9i-yd-sSc"/>
+        <segue reference="pl3-wb-3rS"/>
+        <segue reference="NlD-0v-byJ"/>
         <segue reference="3nK-hl-N5M"/>
-        <segue reference="G1Q-KO-plg"/>
+        <segue reference="Qox-av-93p"/>
     </inferredMetricsTieBreakers>
 </document>

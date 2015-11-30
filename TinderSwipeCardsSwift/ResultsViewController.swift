@@ -15,8 +15,9 @@ class ResultsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Results"
+        self.navigationItem.setHidesBackButton(true, animated: true)
         
-        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
         myBackButton.addTarget(self, action: "popToHome:", forControlEvents: UIControlEvents.TouchUpInside)
         myBackButton.setTitle("Home", forState: UIControlState.Normal)
         let tealColor = UIColor(

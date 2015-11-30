@@ -50,7 +50,7 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
         
         var image: UIImage = UIImage(named: "Map1a")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-957,-1250,2074,2276) //750,749)
+        bgImage!.frame = CGRectMake(-957,-1315,2074,2276) //750,749)
         self.view.addSubview(bgImage!)
         self.view.sendSubviewToBack(bgImage!)
         
@@ -63,10 +63,15 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        //any additional setup here
         //let barFrame = CGRectMake(Map.center.x-600, Map.center.y-100, 290, 50)
         //progressView?.frame = barFrame
         
        // Map.center.x -= view.bounds.width*10
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {

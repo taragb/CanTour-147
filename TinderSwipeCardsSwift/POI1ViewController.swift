@@ -23,7 +23,7 @@ class POI1ViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Point of Interest"
         
-        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
         myBackButton.addTarget(self, action: "goToMap:", forControlEvents: UIControlEvents.TouchUpInside)
         myBackButton.setTitle("Back To Map", forState: UIControlState.Normal)
         let tealColor = UIColor(
@@ -50,7 +50,7 @@ class POI1ViewController: UIViewController {
 //            }
 //        }
         print (" trying to segue to results screen")
-        self.navigationController?.popToViewController(self.navigationController!.viewControllers[1] as! UIViewController, animated: true)
+        self.navigationController?.popToViewController(self.navigationController!.viewControllers[1] as UIViewController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

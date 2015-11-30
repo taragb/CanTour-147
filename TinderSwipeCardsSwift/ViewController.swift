@@ -41,7 +41,7 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
             blue:48.0/255,
             alpha:1.0)
         progressView?.progressTintColor = greyColor
-        let barFrame = CGRectMake(view.center.x - 145 , view.center.y + 300, 290, 50)
+        let barFrame = CGRectMake(view.center.x - 145 , view.center.y + 250, 290, 50)
         progressView?.frame = barFrame
         view.addSubview(progressView!)
         

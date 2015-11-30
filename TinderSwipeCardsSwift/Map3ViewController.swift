@@ -57,10 +57,29 @@ class Map3ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        //let barFrame = CGRectMake(Map.center.x-600, Map.center.y-100, 290, 50)
-        //progressView?.frame = barFrame
-        
-        // Map.center.x -= view.bounds.width*10
+
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+//
+//        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+//        myBackButton.addTarget(self, action: "doNothing:", forControlEvents: UIControlEvents.TouchUpInside)
+//        myBackButton.setTitle("Results", forState: UIControlState.Normal)
+//        let tealColor = UIColor(
+//            red:61.0/255,
+//            green:201.0/255,
+//            blue:179.0/255,
+//            alpha:1.0)
+//        myBackButton.setTitleColor(tealColor, forState: UIControlState.Normal)
+//        myBackButton.sizeToFit()
+//        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
+//        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+    }
+    
+    
+    func doNothing(sender:UIBarButtonItem){
+//        print("going to results")
+        //self.navigationController?.popToRootViewControllerAnimated(true)
+//        self.navigationController?.popToViewController(TopResultsViewController(), animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {
