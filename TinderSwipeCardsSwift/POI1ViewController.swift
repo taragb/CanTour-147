@@ -9,49 +9,27 @@
 import UIKit
 
 class POI1ViewController: UIViewController {
-
+    var bgImage: UIImageView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var image: UIImage = UIImage(named: "Map1b")!
+        bgImage = UIImageView(image: image)
+        bgImage!.frame = CGRectMake(-435,-1089,2074,2276) //750,749)
+        self.view.addSubview(bgImage!)
+        self.view.sendSubviewToBack(bgImage!)
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.title = "Point of Interest"
-        
-        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        myBackButton.addTarget(self, action: "goToMap:", forControlEvents: UIControlEvents.TouchUpInside)
-        myBackButton.setTitle("Back To Map", forState: UIControlState.Normal)
-        let tealColor = UIColor(
-            red:61.0/255,
-            green:201.0/255,
-            blue:179.0/255,
-            alpha:1.0)
-        myBackButton.setTitleColor(tealColor, forState: UIControlState.Normal)
-        myBackButton.sizeToFit()
-        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
-        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
     }
 
-    func goToMap(sender:UIBarButtonItem){
-        self.navigationController?.popToRootViewControllerAnimated(true)
-        
-//        let switchViewController = self.navigationController?.viewControllers[1]
-//        for (var i = 0; i < self.navigationController?.viewControllers.count; i++) {
-//            if(self.navigationController?.viewControllers[i].isKindOfClass(TopResultsViewController) == true) {
-//                
-//                self.navigationController?.popToViewController(self.navigationController!.viewControllers[i] as! UIViewController, animated: true)
-//                
-//                break;
-//            }
-//        }
-        print (" trying to segue to results screen")
-        self.navigationController?.popToViewController(self.navigationController!.viewControllers[1] as UIViewController, animated: true)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

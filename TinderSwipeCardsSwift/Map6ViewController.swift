@@ -28,12 +28,12 @@ class Map6ViewController: UIViewController {
         
         var image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
+        bgImage!.frame = CGRectMake(-958,-621,2074,2276) //        bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
         self.view.addSubview(bgImage!)
         self.view.sendSubviewToBack(bgImage!)
-//        UIView.animateWithDuration(1, animations: {
-//            self.bgImage!.center.y -= 540
-//        })
+        UIView.animateWithDuration(1, animations: {
+            self.bgImage!.center.y -= 540
+        })
         
     }
     

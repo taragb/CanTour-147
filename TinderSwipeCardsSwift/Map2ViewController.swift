@@ -34,7 +34,7 @@ class Map2ViewController: UIViewController {
         
         var image: UIImage = UIImage(named: "Map1b")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-435,-1154,2074,2276) //750,749)
+        bgImage!.frame = CGRectMake(-435,-1089,2074,2276) //750,749)
         self.view.addSubview(bgImage!)
         self.view.sendSubviewToBack(bgImage!)
         
@@ -49,8 +49,9 @@ class Map2ViewController: UIViewController {
         super.viewWillAppear(animated)
         //let barFrame = CGRectMake(Map.center.x-600, Map.center.y-100, 290, 50)
         //progressView?.frame = barFrame
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
         // Map.center.x -= view.bounds.width*10
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -9,11 +9,17 @@
 import UIKit
 
 class POI3ViewController: UIViewController {
-
+    var bgImage: UIImageView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var image: UIImage = UIImage(named: "Map1d")!
+        bgImage = UIImageView(image: image)
+        bgImage!.frame = CGRectMake(-568,-374,2074,2276)
+        self.view.addSubview(bgImage!)
+        self.view.sendSubviewToBack(bgImage!)
     }
 
     override func didReceiveMemoryWarning() {

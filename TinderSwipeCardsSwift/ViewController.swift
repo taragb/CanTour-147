@@ -19,12 +19,13 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
         draggableBackground.delegate = self
         self.view.addSubview(draggableBackground)
         addControls()
+        addHomeBtn()
         
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +33,31 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
         // Dispose of any resources that can be recreated.
     }
 
+    func addHomeBtn() {
+        let button   =  UIButton()
+        button.frame = CGRectMake(-5, 15, 100, 50)
+//        button.backgroundColor = UIColor.greenColor()
+        let tealColor = UIColor(
+            red: 61.0/255,
+            green: 201.0/255,
+            blue: 179.0/255,
+            alpha: 1.0)
+        button.setTitle("Home", forState: UIControlState.Normal)
+//        button.titleLabel?.text = "Home"
+        button.setTitleColor(tealColor, forState: UIControlState.Normal)
+//        button.titleLabel?.textColor = tealColor
+        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.view.addSubview(button)
+    }
+    
+    func buttonAction(sender:UIButton!)
+    {
+        println("Button tapped")
+        self.navigationController?.popToRootViewControllerAnimated(true)
+//        performSegueWithIdentifier("QuiztoHome", sender: nil)
+    }
+    
     func addControls() {
         // Create Progress View Control
         progressView = UIProgressView(progressViewStyle: UIProgressViewStyle.Default)
@@ -41,7 +67,7 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
             blue:48.0/255,
             alpha:1.0)
         progressView?.progressTintColor = greyColor
-        let barFrame = CGRectMake(view.center.x - 145 , view.center.y + 250, 290, 50)
+        let barFrame = CGRectMake(view.center.x - 145 , view.center.y + 300, 290, 50)
         progressView?.frame = barFrame
         view.addSubview(progressView!)
         

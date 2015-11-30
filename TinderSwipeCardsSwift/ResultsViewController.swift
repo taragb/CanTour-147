@@ -13,22 +13,23 @@ class ResultsViewController: UIViewController {
         super.viewWillAppear(animated)
 
         // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.title = "Results"
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        
-        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
-        myBackButton.addTarget(self, action: "popToHome:", forControlEvents: UIControlEvents.TouchUpInside)
-        myBackButton.setTitle("Home", forState: UIControlState.Normal)
-        let tealColor = UIColor(
-            red:61.0/255,
-            green:201.0/255,
-            blue:179.0/255,
-            alpha:1.0)
-        myBackButton.setTitleColor(tealColor, forState: UIControlState.Normal)
-        myBackButton.sizeToFit()
-        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
-        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+//        self.navigationItem.title = "Results"
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+//        
+//        var myBackButton:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+//        myBackButton.addTarget(self, action: "popToHome:", forControlEvents: UIControlEvents.TouchUpInside)
+//        myBackButton.setTitle("Home", forState: UIControlState.Normal)
+//        let tealColor = UIColor(
+//            red:61.0/255,
+//            green:201.0/255,
+//            blue:179.0/255,
+//            alpha:1.0)
+//        myBackButton.setTitleColor(tealColor, forState: UIControlState.Normal)
+//        myBackButton.sizeToFit()
+//        var myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
+//        self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
 
         
     }
