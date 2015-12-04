@@ -79,7 +79,7 @@ class POI1ViewController: UIViewController {
         let button = UIButton(type: .Custom)
         button.backgroundColor = greyColor
 //        button.setBackgroundImage(getImageWithColor(tealColor, size: CGSize(width: 25, height: 25)).alpha(0.1), forState: .Highlighted)
-        button.frame = CGRectMake(173, 198, 40, 40)
+        button.frame = CGRectMake(164, 196, 40, 40)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
         button.layer.masksToBounds = true
         button.layer.borderWidth = 2;

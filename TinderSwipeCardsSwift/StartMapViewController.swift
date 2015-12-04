@@ -11,6 +11,13 @@ import UIKit
 class StartMapViewController: UIViewController {
     var bgImage: UIImageView?
     
+//    @IBAction func onTap2(sender: AnyObject) {
+//        performSegueWithIdentifier("beginTour", sender: nil)
+//    }
+//    @IBAction func onTap(sender: AnyObject) {
+//        performSegueWithIdentifier("beginTour", sender: nil)
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
