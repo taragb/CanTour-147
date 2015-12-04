@@ -1,0 +1,18 @@
+as -> as!
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Maya Balakrishnan <mayanb@rescomp-15-299531.stanford.edu>
+#
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .DS_Store
+#	modified:   TinderSwipeCardsSwift/POI1ViewController.swift
+#	modified:   TinderSwipeCardsSwift/POI2ViewController.swift
+#	modified:   TinderSwipeCardsSwift/POI3ViewController.swift
+#	modified:   TinderSwipeCardsSwift/POI4ViewController.swift
+#	modified:   TinderSwipeCardsSwift/noAnimationSegue.swift
+#	modified:   TinderSwipeCardsSwift/noAnimationSegueUnwind.swift
+#

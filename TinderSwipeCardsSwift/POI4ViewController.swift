@@ -43,7 +43,7 @@ class POI4ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as UIButton
+        var button = UIButton.buttonWithType(.Custom) as! UIButton
         button.backgroundColor = greyColor
         button.frame = CGRectMake(178, 230, 25, 25)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
@@ -57,7 +57,7 @@ class POI4ViewController: UIViewController {
         print("createdButton")
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as UIButton
+        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
         button2.backgroundColor = greyColor
         button2.frame = CGRectMake(178, 305, 25, 25)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0
@@ -72,7 +72,7 @@ class POI4ViewController: UIViewController {
         
         
 //        Button 3
-        var button3 = UIButton.buttonWithType(.Custom) as UIButton
+        var button3 = UIButton.buttonWithType(.Custom) as! UIButton
         button3.backgroundColor = greyColor
         button3.frame = CGRectMake(178, 380, 25, 25)
         button3.layer.cornerRadius = button.bounds.size.width / 2.0

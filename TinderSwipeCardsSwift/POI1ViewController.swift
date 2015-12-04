@@ -76,7 +76,7 @@ class POI1ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as UIButton
+        var button = UIButton.buttonWithType(.Custom) as! UIButton
         button.backgroundColor = greyColor
 //        button.setBackgroundImage(getImageWithColor(tealColor, size: CGSize(width: 25, height: 25)).alpha(0.1), forState: .Highlighted)
         button.frame = CGRectMake(173, 193, 25, 25)
@@ -91,7 +91,7 @@ class POI1ViewController: UIViewController {
         print("createdButton")
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as UIButton
+        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
         button2.backgroundColor = greyColor
         button2.frame = CGRectMake(175, 290, 25, 25)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0

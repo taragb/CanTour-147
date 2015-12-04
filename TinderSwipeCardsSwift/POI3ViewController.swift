@@ -43,7 +43,7 @@ class POI3ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as UIButton
+        var button = UIButton.buttonWithType(.Custom) as! UIButton
         button.backgroundColor = greyColor
         button.frame = CGRectMake(220, 323, 25, 25)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
@@ -57,7 +57,7 @@ class POI3ViewController: UIViewController {
         print("createdButton")  
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as UIButton
+        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
         button2.backgroundColor = greyColor
         button2.frame = CGRectMake(80, 297, 25, 25)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0
