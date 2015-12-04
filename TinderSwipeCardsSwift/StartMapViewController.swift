@@ -16,7 +16,7 @@ class StartMapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        var image: UIImage = UIImage(named: "Map1a")!
+        let image: UIImage = UIImage(named: "Map1a")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-957,-1250,2074,2276) //750,749)
         self.view.addSubview(bgImage!)

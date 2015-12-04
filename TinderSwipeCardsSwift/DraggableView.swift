@@ -29,7 +29,7 @@ class DraggableView: UIView {
     var xFromCenter: Float!
     var yFromCenter: Float!
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

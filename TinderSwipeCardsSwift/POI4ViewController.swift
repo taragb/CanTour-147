@@ -35,7 +35,7 @@ class POI4ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var image: UIImage = UIImage(named: "Map1e")!
+        let image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-810,-374,2074,2276)
         self.view.addSubview(bgImage!)
@@ -43,9 +43,9 @@ class POI4ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as! UIButton
+        let button = UIButton(type: .Custom)
         button.backgroundColor = greyColor
-        button.frame = CGRectMake(178, 230, 25, 25)
+        button.frame = CGRectMake(170, 215, 40, 40)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
         button.layer.masksToBounds = true
         button.layer.borderWidth = 2;
@@ -54,12 +54,12 @@ class POI4ViewController: UIViewController {
         button.setTitleColor(tealColor, forState: UIControlState.Normal)
         button.addTarget(self, action: "buttonAction1:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
-        print("createdButton")
+        print("createdButton", terminator: "")
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
+        let button2 = UIButton(type: .Custom)
         button2.backgroundColor = greyColor
-        button2.frame = CGRectMake(178, 305, 25, 25)
+        button2.frame = CGRectMake(170, 290, 40, 40)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0
         button2.layer.masksToBounds = true
         button2.layer.borderWidth = 2;
@@ -68,13 +68,13 @@ class POI4ViewController: UIViewController {
         button2.setTitleColor(tealColor, forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction2:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button2)
-        print("createdButton")
+        print("createdButton", terminator: "")
         
         
 //        Button 3
-        var button3 = UIButton.buttonWithType(.Custom) as! UIButton
+        let button3 = UIButton(type: .Custom)
         button3.backgroundColor = greyColor
-        button3.frame = CGRectMake(178, 380, 25, 25)
+        button3.frame = CGRectMake(170, 365, 40, 40)
         button3.layer.cornerRadius = button.bounds.size.width / 2.0
         button3.layer.masksToBounds = true
         button3.layer.borderWidth = 2;
@@ -83,7 +83,7 @@ class POI4ViewController: UIViewController {
         button3.setTitleColor(tealColor, forState: UIControlState.Normal)
         button3.addTarget(self, action: "buttonAction3:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button3)
-        print("createdButton")
+        print("createdButton", terminator: "")
 
     }
     
@@ -93,7 +93,7 @@ class POI4ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count1 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "the light colors at the top convey a feeling of \"lightness\""
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)
@@ -111,7 +111,7 @@ class POI4ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count2 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "the stand thins to a point which emphasizes the lightness of the bubble"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)
@@ -128,7 +128,7 @@ class POI4ViewController: UIViewController {
         {
             factLabel.textAlignment = NSTextAlignment.Center;
             if (count3 % 2 == 0) {
-                println("Button tapped")
+                print("Button tapped")
                 factLabel.text = "in contrast to the bubble, the base is a heavy, dark cylinder"
                 sender.backgroundColor = clear
                 sender.setTitle("", forState: UIControlState.Normal)

@@ -35,7 +35,7 @@ class POI3ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var image: UIImage = UIImage(named: "Map1d")!
+        let image: UIImage = UIImage(named: "Map1d")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-568,-374,2074,2276)
         self.view.addSubview(bgImage!)
@@ -43,9 +43,9 @@ class POI3ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as! UIButton
+        let button = UIButton(type: .Custom)
         button.backgroundColor = greyColor
-        button.frame = CGRectMake(220, 323, 25, 25)
+        button.frame = CGRectMake(210, 313, 40, 40)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
         button.layer.masksToBounds = true
         button.layer.borderWidth = 2;
@@ -54,12 +54,12 @@ class POI3ViewController: UIViewController {
         button.setTitleColor(tealColor, forState: UIControlState.Normal)
         button.addTarget(self, action: "buttonAction1:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
-        print("createdButton")  
+        print("createdButton", terminator: "")  
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
+        let button2 = UIButton(type: .Custom)
         button2.backgroundColor = greyColor
-        button2.frame = CGRectMake(80, 297, 25, 25)
+        button2.frame = CGRectMake(70, 287, 40, 40)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0
         button2.layer.masksToBounds = true
         button2.layer.borderWidth = 2;
@@ -68,7 +68,7 @@ class POI3ViewController: UIViewController {
         button2.setTitleColor(tealColor, forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction2:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button2)
-        print("createdButton")
+        print("createdButton", terminator: "")
         
         
         //Button 3
@@ -92,7 +92,7 @@ class POI3ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count1 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "the sharp colors and heavy pigment of the watermelon brings life to an otherwise commonplace object"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)
@@ -110,7 +110,7 @@ class POI3ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count2 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "the well defined shadows are characteristic of advertisements"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)

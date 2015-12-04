@@ -13,13 +13,28 @@ protocol DraggableViewBackgroundCardsProtocol {
     func draggableViewBackgroundOneCardLess(DraggableView: DraggableViewBackground)
 }
 
+//extension Array {
+//    mutating func shuffle() {
+//        if count < 2 { return }
+//        for i in 0..<(count - 1) {
+//            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+//            swap(&self[i], &self[j])
+//        }
+//    }
+//}
+
+
 extension Array {
-    mutating func shuffle() {
-        if count < 2 { return }
-        for i in 0..<(count - 1) {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + i
-            swap(&self[i], &self[j])
+    var shuffle:[Element] {
+        var elements = self
+        for index in 0..<elements.count {
+            let anotherIndex = Int(arc4random_uniform(UInt32(elements.count - index))) + index
+            anotherIndex != index ? swap(&elements[index], &elements[anotherIndex]) : ()
         }
+        return elements
+    }
+    mutating func shuffled() {
+        self = shuffle
     }
 }
 
@@ -40,7 +55,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var xButton: UIButton!
     var delegate : DraggableViewBackgroundCardsProtocol?
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
@@ -50,7 +65,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         self.setupView()
         exampleCardLabels = ["", "", "", "", "", "", "", "", "", "", ""]
         exampleCardLocations = ["Artboard 1.png", "Artboard 2.png", "Artboard 3.png", "Artboard 4.png", "Artboard 5.png", "Artboard 6.png", "Artboard 7.png", "Artboard 8.png", "Artboard 9.png", "Artboard 10.png"]
-        exampleCardLocations.shuffle()
+        exampleCardLocations = exampleCardLocations.shuffle
         exampleCardLocations.append("Artboard Blank")
         allCards = []
         loadedCards = []
@@ -76,7 +91,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
 
         //test comment
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
-        var draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 - 25, CARD_WIDTH, CARD_HEIGHT))
+        let draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 - 25, CARD_WIDTH, CARD_HEIGHT))
         draggableView.information.text = exampleCardLabels[index]
         draggableView.self.backgroundColor = UIColor(patternImage: UIImage(named: exampleCardLocations[index])!) //make this dynamic
         draggableView.delegate = self
@@ -91,7 +106,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         if exampleCardLabels.count > 0 {
             let numLoadedCardsCap = exampleCardLabels.count > MAX_BUFFER_SIZE ? MAX_BUFFER_SIZE : exampleCardLabels.count
             for var i = 0; i < exampleCardLabels.count; i++ {
-                var newCard: DraggableView = self.createDraggableViewWithDataAtIndex(i)
+                let newCard: DraggableView = self.createDraggableViewWithDataAtIndex(i)
                 allCards.append(newCard)
                 if i < numLoadedCardsCap {
                     loadedCards.append(newCard)
@@ -115,7 +130,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         delegate?.draggableViewBackgroundOneCardLess(self)
         loadedCards.removeAtIndex(0)
 
-        print(cardsLoadedIndex)
+        print(cardsLoadedIndex, terminator: "")
         
         if cardsLoadedIndex < allCards.count {
             loadedCards.append(allCards[cardsLoadedIndex])
@@ -130,7 +145,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         delegate?.draggableViewBackgroundOneCardLess(self)
         loadedCards.removeAtIndex(0)
         
-        print(cardsLoadedIndex)
+        print(cardsLoadedIndex, terminator: "")
         
         if cardsLoadedIndex < allCards.count {
             loadedCards.append(allCards[cardsLoadedIndex])
@@ -145,7 +160,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         if loadedCards.count <= 0 {
             return
         }
-        var dragView: DraggableView = loadedCards[0]
+        let dragView: DraggableView = loadedCards[0]
         dragView.overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeRight)
         UIView.animateWithDuration(0.2, animations: {
             () -> Void in
@@ -158,7 +173,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         if loadedCards.count <= 0 {
             return
         }
-        var dragView: DraggableView = loadedCards[0]
+        let dragView: DraggableView = loadedCards[0]
         dragView.overlayView.setMode(GGOverlayViewMode.GGOverlayViewModeLeft)
         UIView.animateWithDuration(0.2, animations: {
             () -> Void in

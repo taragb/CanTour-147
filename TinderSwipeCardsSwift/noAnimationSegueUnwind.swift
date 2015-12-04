@@ -11,10 +11,10 @@ import UIKit
 class noAnimationSegueUnwind: UIStoryboardSegue {
     
     override func perform() {
-        var src: UIViewController = self.sourceViewController as! UIViewController
-        var dst: UIViewController = self.destinationViewController as! UIViewController
-        var transition: CATransition = CATransition()
-        var timeFunc : CAMediaTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        let src: UIViewController = self.sourceViewController 
+        let dst: UIViewController = self.destinationViewController 
+        let transition: CATransition = CATransition()
+        let timeFunc : CAMediaTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         transition.duration = 0.25
         transition.timingFunction = timeFunc
         transition.type = kCATransitionPush

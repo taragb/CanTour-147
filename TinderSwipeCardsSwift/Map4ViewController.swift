@@ -14,7 +14,7 @@ class Map4ViewController: UIViewController {
     
     
     @IBAction func onTap(sender: AnyObject) {
-        print(count)
+        print(count, terminator: "")
         if count == 0 {
             UIView.animateWithDuration(1.7, animations: {
                 self.bgImage!.center.x -= 242
@@ -31,7 +31,7 @@ class Map4ViewController: UIViewController {
         count = 0
         super.viewDidLoad()
         
-        var image: UIImage = UIImage(named: "Map1d")!
+        let image: UIImage = UIImage(named: "Map1d")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-568,-374,2074,2276)
         self.view.addSubview(bgImage!)
@@ -56,9 +56,9 @@ class Map4ViewController: UIViewController {
     
         //        bgImage!.transform = CGAffineTransformMakeScale(2,2)
         //        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
-        print(bgImage!.frame.size.width)
-        print("     ")
-        print(bgImage!.frame.size.height)
+        print(bgImage!.frame.size.width, terminator: "")
+        print("     ", terminator: "")
+        print(bgImage!.frame.size.height, terminator: "")
     
         bgImage!.hidden = false
     

@@ -36,7 +36,7 @@ class POI2ViewController: UIViewController {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         color.setFill()
         UIRectFill(CGRectMake(0, 0, 100, 100))
-        var image = UIGraphicsGetImageFromCurrentImageContext()
+        let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
     }
@@ -45,7 +45,7 @@ class POI2ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var image: UIImage = UIImage(named: "Map1c")!
+        let image: UIImage = UIImage(named: "Map1c")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-435,-730,2074,2276)
         self.view.addSubview(bgImage!)
@@ -53,10 +53,10 @@ class POI2ViewController: UIViewController {
         
         
         //Button 1
-        var button = UIButton.buttonWithType(.Custom) as! UIButton
+        let button = UIButton(type: .Custom)
         button.backgroundColor = greyColor
         //        button.setBackgroundImage(getImageWithColor(tealColor, size: CGSize(width: 25, height: 25)).alpha(0.1), forState: .Highlighted)
-        button.frame = CGRectMake(173, 270, 25, 25)
+        button.frame = CGRectMake(180, 260, 40, 40)
         button.layer.cornerRadius = button.bounds.size.width / 2.0
         button.layer.masksToBounds = true
         button.layer.borderWidth = 2;
@@ -65,12 +65,12 @@ class POI2ViewController: UIViewController {
         button.setTitleColor(tealColor, forState: UIControlState.Normal)
         button.addTarget(self, action: "buttonAction1:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
-        print("createdButton")
+        print("createdButton", terminator: "")
         
         //Button 2
-        var button2 = UIButton.buttonWithType(.Custom) as! UIButton
+        let button2 = UIButton(type: .Custom)
         button2.backgroundColor = greyColor
-        button2.frame = CGRectMake(140, 300, 25, 25)
+        button2.frame = CGRectMake(140, 300, 40, 40)
         button2.layer.cornerRadius = button.bounds.size.width / 2.0
         button2.layer.masksToBounds = true
         button2.layer.borderWidth = 2;
@@ -79,13 +79,13 @@ class POI2ViewController: UIViewController {
         button2.setTitleColor(tealColor, forState: UIControlState.Normal)
         button2.addTarget(self, action: "buttonAction2:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button2)
-        print("createdButton")
+        print("createdButton", terminator: "")
         
         
         //Button 3
-        var button3 = UIButton.buttonWithType(.Custom) as! UIButton
+        let button3 = UIButton(type: .Custom)
         button3.backgroundColor = greyColor
-        button3.frame = CGRectMake(245, 218, 25, 25)
+        button3.frame = CGRectMake(230, 218, 40, 40)
         button3.layer.cornerRadius = button.bounds.size.width / 2.0
         button3.layer.masksToBounds = true
         button3.layer.borderWidth = 2;
@@ -94,7 +94,7 @@ class POI2ViewController: UIViewController {
         button3.setTitleColor(tealColor, forState: UIControlState.Normal)
         button3.addTarget(self, action: "buttonAction3:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button3)
-        print("createdButton")
+        print("createdButton", terminator: "")
 
     }
     
@@ -103,7 +103,7 @@ class POI2ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count1 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "Rodin's Balzac is stripped of the writer's usual attributes (pen, book, armchair, etc.)"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)
@@ -121,7 +121,7 @@ class POI2ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count2 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "the fluid surface of the dressing gown was created by stiffening and plastering a real robe"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)
@@ -138,7 +138,7 @@ class POI2ViewController: UIViewController {
     {
         factLabel.textAlignment = NSTextAlignment.Center;
         if (count3 % 2 == 0) {
-            println("Button tapped")
+            print("Button tapped")
             factLabel.text = "this statue of 19th century French novelist Balzac was not displayed in public for 41 years due to its controversial nature"
             sender.backgroundColor = clear
             sender.setTitle("", forState: UIControlState.Normal)

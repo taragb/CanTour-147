@@ -15,7 +15,7 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
         super.viewDidLoad()
         self.title = ""
         // Do any additional setup after loading the view, typically from a nib.
-        var draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
         draggableBackground.delegate = self
         self.view.addSubview(draggableBackground)
         addControls()
@@ -53,7 +53,7 @@ class ViewController: UIViewController, DraggableViewBackgroundCardsProtocol {
     
     func buttonAction(sender:UIButton!)
     {
-        println("Button tapped")
+        print("Button tapped")
         self.navigationController?.popToRootViewControllerAnimated(true)
 //        performSegueWithIdentifier("QuiztoHome", sender: nil)
     }

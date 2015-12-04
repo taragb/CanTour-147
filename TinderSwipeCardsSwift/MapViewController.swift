@@ -15,7 +15,7 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tourName: UILabel!
     
     @IBAction func onTap(sender: AnyObject) {
-        print(count)
+        print(count, terminator: "")
         if count == 0 {
             UIView.animateWithDuration(1.75, animations: {
                 self.bgImage!.center.x += 389
@@ -49,7 +49,7 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
         count = 0
         super.viewDidLoad()
         
-        var image: UIImage = UIImage(named: "Map1a")!
+        let image: UIImage = UIImage(named: "Map1a")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-957,-1250,2074,2276) //750,749)
         self.view.addSubview(bgImage!)
@@ -80,9 +80,9 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     
 //        bgImage!.transform = CGAffineTransformMakeScale(2,2)
 //        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
-        print(bgImage!.frame.size.width)
-        print("     ")
-        print(bgImage!.frame.size.height)
+        print(bgImage!.frame.size.width, terminator: "")
+        print("     ", terminator: "")
+        print(bgImage!.frame.size.height, terminator: "")
 
         bgImage!.hidden = false
    

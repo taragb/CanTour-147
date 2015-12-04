@@ -14,7 +14,7 @@ class Map5ViewController: UIViewController {
     
     
     @IBAction func onTap(sender: AnyObject) {
-        print(count)
+        print(count, terminator: "")
         if count == 0 {
             UIView.animateWithDuration(1.7, animations: {
                 self.bgImage!.center.y -= 247
@@ -35,7 +35,7 @@ class Map5ViewController: UIViewController {
             
         }
         else if count == 3 {
-            print(" End Tour")
+            print(" End Tour", terminator: "")
             performSegueWithIdentifier("seeEnd", sender: nil)
         }
         
@@ -45,7 +45,7 @@ class Map5ViewController: UIViewController {
         count = 0
         super.viewDidLoad()
         
-        var image: UIImage = UIImage(named: "Map1e")!
+        let image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
         bgImage!.frame = CGRectMake(-810,-374,2074,2276)
         self.view.addSubview(bgImage!)
@@ -70,9 +70,9 @@ class Map5ViewController: UIViewController {
         
         //        bgImage!.transform = CGAffineTransformMakeScale(2,2)
         //        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
-        print(bgImage!.frame.size.width)
-        print("     ")
-        print(bgImage!.frame.size.height)
+        print(bgImage!.frame.size.width, terminator: "")
+        print("     ", terminator: "")
+        print(bgImage!.frame.size.height, terminator: "")
         
         bgImage!.hidden = false
         

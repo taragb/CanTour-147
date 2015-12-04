@@ -13,8 +13,8 @@ class noAnimationSegue: UIStoryboardSegue {
         // Assign the source and destination views to local variables.
 //        var firstVCView = self.sourceViewController.view as UIView!
 //        var secondVCView = self.destinationViewController.view as UIView!
-        let src = self.sourceViewController as! UIViewController
-        let dst = self.destinationViewController as! UIViewController
+        let src = self.sourceViewController 
+        let dst = self.destinationViewController 
 //        src.navigationController.pushViewController(dst, animated:false)
         src.navigationController?.pushViewController(dst, animated: false)
 

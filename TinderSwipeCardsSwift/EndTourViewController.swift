@@ -15,7 +15,7 @@ class EndTourViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        var image: UIImage = UIImage(named: "Map1e")!
+        let image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
         //        bgImage!.frame = CGRectMake(-958,-621,2074,2276)
         bgImage!.frame = CGRectMake(-958,-1161,2074,2276)

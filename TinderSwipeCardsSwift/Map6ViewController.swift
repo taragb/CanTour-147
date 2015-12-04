@@ -14,9 +14,9 @@ class Map6ViewController: UIViewController {
     
     
     @IBAction func onTap(sender: AnyObject) {
-        print(count)
+        print(count, terminator: "")
         if count == 0 {
-            print("End Tour")
+            print("End Tour", terminator: "")
             performSegueWithIdentifier("EndofTour", sender: nil)
         }
     }
@@ -25,7 +25,7 @@ class Map6ViewController: UIViewController {
         count = 0
         super.viewDidLoad()
         
-        var image: UIImage = UIImage(named: "Map1e")!
+        let image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
 //        bgImage!.frame = CGRectMake(-958,-621,2074,2276) 
         bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
@@ -56,9 +56,9 @@ class Map6ViewController: UIViewController {
         
         //        bgImage!.transform = CGAffineTransformMakeScale(2,2)
         //        bgImage!.frame = CGRectMake(20, 20, bgImage!.frame.size.width, bgImage!.frame.size.height);
-        print(bgImage!.frame.size.width)
-        print("     ")
-        print(bgImage!.frame.size.height)
+        print(bgImage!.frame.size.width, terminator: "")
+        print("     ", terminator: "")
+        print(bgImage!.frame.size.height, terminator: "")
         
         bgImage!.hidden = false
         
