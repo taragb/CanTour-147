@@ -16,10 +16,9 @@ class Map6ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         print(count)
         if count == 0 {
-            print(" End Tour")
-            //            performSegueWithIdentifier("seePOI4", sender: nil)
+            print("End Tour")
+            performSegueWithIdentifier("EndofTour", sender: nil)
         }
-        
     }
     
     override func viewDidLoad() {
@@ -28,12 +27,14 @@ class Map6ViewController: UIViewController {
         
         var image: UIImage = UIImage(named: "Map1e")!
         bgImage = UIImageView(image: image)
-        bgImage!.frame = CGRectMake(-958,-621,2074,2276) //        bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
+//        bgImage!.frame = CGRectMake(-958,-621,2074,2276) 
+        bgImage!.frame = CGRectMake(-958,-1161,2074,2276)
         self.view.addSubview(bgImage!)
         self.view.sendSubviewToBack(bgImage!)
-        UIView.animateWithDuration(1, animations: {
-            self.bgImage!.center.y -= 540
-        })
+//        UIView.animateWithDuration(2.5, animations: {
+//            self.bgImage!.center.y -= 540
+//        })
+        performSegueWithIdentifier("EndofTour", sender: nil)
         
     }
     

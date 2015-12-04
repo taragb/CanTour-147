@@ -16,7 +16,7 @@ class Map5ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         print(count)
         if count == 0 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(1.7, animations: {
                 self.bgImage!.center.y -= 247
             })
             count! += 1
@@ -27,13 +27,14 @@ class Map5ViewController: UIViewController {
             })
             count! += 1
         }
-//        else if count == 2 {
-//            UIView.animateWithDuration(1, animations: {
-//                self.bgImage!.center.y -= 540
-//            })
-//            count! += 1
-//        }
         else if count == 2 {
+            UIView.animateWithDuration(2.5, animations: {
+                self.bgImage!.center.y -= 540
+            })
+            count! += 1
+            
+        }
+        else if count == 3 {
             print(" End Tour")
             performSegueWithIdentifier("seeEnd", sender: nil)
         }

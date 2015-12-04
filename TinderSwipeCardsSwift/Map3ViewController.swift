@@ -21,13 +21,13 @@ class Map3ViewController: UIViewController {
             })
             count! += 1
         } else if count == 1 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(1.1, animations: {
                 self.bgImage!.center.x -= 133
             })
             count! += 1
         }
         else if count == 2 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(2, animations: {
                 self.bgImage!.center.y += 243
             })
             count! += 1

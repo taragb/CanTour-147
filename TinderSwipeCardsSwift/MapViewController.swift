@@ -12,11 +12,12 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
     var bgImage: UIImageView?
     var count: Int?
     
+    @IBOutlet weak var tourName: UILabel!
     
     @IBAction func onTap(sender: AnyObject) {
         print(count)
         if count == 0 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(1.75, animations: {
                 self.bgImage!.center.x += 389
             })
             count! += 1
@@ -27,13 +28,13 @@ class MapViewController: UIViewController /*, UITableViewDelegate, UITableViewDa
             count! += 1
         }
         else if count == 2 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(1.15, animations: {
                 self.bgImage!.center.x += 133
             })
             count! += 1
         }
         else if count == 3 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(0.5, animations: {
                 self.bgImage!.center.y += 40
             })
             count! += 1

@@ -16,7 +16,7 @@ class Map2ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         print(count)
         if count == 0 {
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(2.5, animations: {
                 self.bgImage!.center.y += 359
             })
             count! += 1
